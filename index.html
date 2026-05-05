@@ -181,6 +181,57 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
 .hist-kpi{text-align:center;min-width:65px;}
 .hist-kpi .hk-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.3px;}
 .hist-kpi .hk-val{font-size:13px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--green-800);}
+/* RESULTADO TRIMESTRAL COMPARATIVO */
+.hist-results{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border-dark);}
+.hist-results-title{font-size:10px;font-weight:700;color:var(--green-800);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;}
+.hist-results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.result-item{background:white;border:1px solid var(--green-100);border-radius:8px;padding:9px 11px;}
+.result-item .ri-metric{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;color:var(--green-800);margin-bottom:5px;}
+.result-item .ri-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;}
+.result-item .ri-label{font-size:10px;color:var(--muted);}
+.result-item .ri-val{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:11px;color:var(--navy);}
+.result-badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;margin-top:5px;}
+.result-beat{background:#DCFCE7;color:#14532D;}
+.result-miss{background:#FEE2E2;color:#991B1B;}
+.result-inline{background:#EFF6FF;color:#1D4ED8;}
+/* SNAPSHOT FORM EXPANDIDO */
+.hist-form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.15);}
+.hist-form-pair{display:flex;flex-direction:column;gap:3px;}
+.hist-form-pair label{font-size:10px;font-weight:600;color:rgba(255,255,255,0.75);text-transform:uppercase;letter-spacing:0.4px;}
+.hist-form-pair .pair-inputs{display:flex;gap:4px;}
+.hist-form-pair input{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:white;padding:4px 7px;border-radius:5px;font-family:'JetBrains Mono',monospace;font-size:11px;width:100%;}
+.hist-form-pair input::placeholder{color:rgba(255,255,255,0.45);}
+.hist-form-pair .pair-label{font-size:9px;color:rgba(255,255,255,0.55);text-align:center;}
+/* EASY FACTOR PAGE */
+.ef-hero{background:linear-gradient(135deg,#0A3D1F 0%,#14532D 60%,#166534 100%);color:white;padding:48px 28px;text-align:center;}
+.ef-hero h1{font-size:28px;font-weight:800;letter-spacing:-0.5px;margin-bottom:14px;}
+.ef-hero p{font-size:14px;color:rgba(255,255,255,0.82);max-width:640px;margin:0 auto;line-height:1.7;}
+.ef-hero-badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px;}
+.ef-hero-badge{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;}
+.ef-body{padding:28px;max-width:1100px;margin:0 auto;}
+.ef-section-title{font-size:19px;font-weight:800;color:var(--green-800);margin-bottom:6px;}
+.ef-section-sub{font-size:13px;color:var(--slate);margin-bottom:20px;line-height:1.6;}
+.ef-card{background:white;border:1px solid var(--green-100);border-radius:12px;padding:22px 24px;box-shadow:0 1px 6px rgba(21,128,61,0.06);margin-bottom:16px;}
+.ef-card h3{font-size:15px;font-weight:700;color:var(--green-800);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.ef-card p,.ef-card li{font-size:13px;color:var(--slate);line-height:1.7;}
+.ef-card ul{padding-left:18px;margin-top:8px;}
+.ef-card li{margin-bottom:6px;}
+.ef-indicators-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px;margin-top:4px;}
+.ef-ind{background:white;border:1px solid var(--green-100);border-radius:10px;padding:16px 18px;box-shadow:0 1px 4px rgba(21,128,61,0.06);}
+.ef-ind .ei-tag{display:inline-block;background:var(--green-800);color:white;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;padding:2px 9px;border-radius:4px;margin-bottom:9px;letter-spacing:0.3px;}
+.ef-ind h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.ef-ind p{font-size:12px;color:var(--slate);line-height:1.6;}
+.ef-timeline{display:flex;flex-direction:column;gap:0;}
+.ef-step{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--green-50);}
+.ef-step:last-child{border-bottom:none;}
+.ef-step-num{width:38px;height:38px;border-radius:50%;background:var(--green-800);color:white;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.ef-step-body h4{font-size:14px;font-weight:700;color:var(--green-800);margin-bottom:5px;}
+.ef-step-body p{font-size:12px;color:var(--slate);line-height:1.65;}
+.ef-signals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-top:14px;}
+.ef-signal{border-radius:8px;padding:13px;text-align:center;}
+.ef-signal .es-name{font-size:12px;font-weight:700;margin-bottom:4px;}
+.ef-signal .es-crit{font-size:11px;opacity:0.9;line-height:1.4;}
+.ef-aviso{background:#FFF7ED;border:1px solid #FED7AA;border-left:4px solid #F59E0B;border-radius:8px;padding:16px 20px;margin:0 0 20px;font-size:13px;color:#92400E;line-height:1.65;}
 /* LANDING / SUBSCRIPTION */
 .landing-hero{background:linear-gradient(135deg,#0A3D1F 0%,#14532D 60%,#166534 100%);padding:56px 28px;text-align:center;color:white;}
 .landing-hero h1{font-size:32px;font-weight:800;letter-spacing:-1px;margin-bottom:14px;}
@@ -461,7 +512,10 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
   <button class="sec-btn" onclick="showSector('imobiliario',this)">🏗️ Imobiliário <span class="sec-badge">14</span></button>
   <button class="sec-btn" onclick="showSector('equipamentos',this)">⚙️ Equipamentos <span class="sec-badge">13</span></button>
   <button class="sec-btn" onclick="showSector('saude',this)">🏥 Saúde <span class="sec-badge">18</span></button>
-  <button class="sec-btn" onclick="showSector('historico',this)">📚 Histórico DB</button>
+  <button class="sec-btn" onclick="showSector('prodindustrial',this)">🏭 Prod. Industrial <span class="sec-badge">4</span></button>
+  <button class="sec-btn" onclick="showSector('transporte',this)">🚛 Transporte <span class="sec-badge">8</span></button>
+  <button class="sec-btn" onclick="showSector('historico',this)">📚 Histórico</button>
+  <button class="sec-btn" onclick="showSector('easyfactor',this)">📘 EASY Factor</button>
 </nav>
 
 <!-- ═══════════════════════════════════════════════════
@@ -473,15 +527,15 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
   <div class="easy-hero">
     <div class="easy-hero-inner">
       <div class="easy-hero-left">
-        <div class="easy-hero-badge">🎯 Quadro Decisório Unificado · 37 oportunidades identificadas</div>
+        <div class="easy-hero-badge">🎯 Quadro Decisório Unificado · 44 oportunidades identificadas</div>
         <h1 class="easy-hero-title">EASY Invest<br><span>Factor Invest & Valuation B3</span></h1>
-        <p class="easy-hero-sub">Oportunidades com upside &gt;20% e alertas de risco across 5 setores analisados. Cotações em tempo real via Brapi.dev.</p>
+        <p class="easy-hero-sub">Oportunidades com upside &gt;20% e alertas de risco across 7 setores analisados. Cotações em tempo real via Brapi.dev.</p>
       </div>
       <div class="easy-hero-stats">
-        <div class="ehs-item"><div class="ehs-val" style="color:#22C55E">37</div><div class="ehs-label">Oportunidades</div></div>
+        <div class="ehs-item"><div class="ehs-val" style="color:#22C55E">44</div><div class="ehs-label">Oportunidades</div></div>
         <div class="ehs-item"><div class="ehs-val" style="color:#EF4444">6</div><div class="ehs-label">Alertas de Risco</div></div>
-        <div class="ehs-item"><div class="ehs-val">5</div><div class="ehs-label">Setores</div></div>
-        <div class="ehs-item"><div class="ehs-val">84</div><div class="ehs-label">Empresas</div></div>
+        <div class="ehs-item"><div class="ehs-val">7</div><div class="ehs-label">Setores</div></div>
+        <div class="ehs-item"><div class="ehs-val">92</div><div class="ehs-label">Empresas</div></div>
       </div>
     </div>
   </div>
@@ -497,6 +551,8 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
         <button class="efb-btn" onclick="filterOppSector('Imobiliário',this)">🏗️ Imobiliário</button>
         <button class="efb-btn" onclick="filterOppSector('Equipamentos',this)">⚙️ Equipamentos</button>
         <button class="efb-btn" onclick="filterOppSector('Saúde',this)">🏥 Saúde</button>
+        <button class="efb-btn" onclick="filterOppSector('Prod. Industrial',this)">🏭 Prod. Industrial</button>
+        <button class="efb-btn" onclick="filterOppSector('Transporte',this)">🚛 Transporte</button>
       </div>
       <div class="efb-sort">
         <span style="font-size:12px;font-weight:600;color:var(--slate)">Ordenar:</span>
@@ -519,7 +575,7 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
           <h2 class="easy-section-title">🚀 Oportunidades de Compra</h2>
           <p class="easy-section-sub">Empresas com upside &gt; 20% vs Preço Justo · Ordenadas por Factor Score</p>
         </div>
-        <span class="easy-section-count" id="oppCount">20 de 37 exibidas</span>
+        <span class="easy-section-count" id="oppCount">21 de 38 exibidas</span>
       </div>
       <div class="opp-grid" id="oppGrid">
         
@@ -1082,6 +1138,202 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
       </div>
       <div class="opp-strat">🎯 Monitorar — entrada somente em correção >10%</div>
     </div>
+
+    <div class="opp-card" onclick="jumpToSector('SUZB3')">
+      <div class="opp-card-top">
+        <div class="opp-left">
+          <div class="opp-ticker-wrap">
+            <span class="opp-ticker" id="oi-ticker-SUZB3">SUZB3</span>
+            <span class="signal-tag sig-compra">✅ COMPRA</span>
+          </div>
+          <div class="opp-nome">Suzano Papel e Celulose SA</div>
+          <span class="setor-tag" style="background:#FEF9C3;color:#713F12">🏭 Prod. Industrial</span>
+        </div>
+        <div class="opp-right">
+          <span class="up-badge up-good">✅ +25.4%</span>
+          <div class="opp-price-wrap">
+            <div class="opp-price-row"><span class="opp-price-label">Cotação</span><span class="opp-price val-live" id="oi-price-SUZB3">R$&nbsp;47.80</span></div>
+            <div class="opp-price-row"><span class="opp-price-label">Preço Justo</span><span class="opp-price" style="color:var(--green-700)">R$&nbsp;59.95</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="opp-indicators">
+        <div class="opp-ind"><span class="ind-label">ROIC</span><span class="ind-val">5.1%</span></div>
+        <div class="opp-ind"><span class="ind-label">ROE</span><span class="ind-val">26.3%</span></div>
+        <div class="opp-ind"><span class="ind-label">DY</span><span class="ind-val">2.34%</span></div>
+        <div class="opp-ind"><span class="ind-label">EV/EBIT</span><span class="ind-val">13.3x</span></div>
+        <div class="opp-ind"><span class="ind-label">Factor</span><div class="ind-score-wrap"><div class="score-mini-wrap"><div class="score-mini-bar" style="width:69%;background:#16A34A"></div></div><span class="score-mini-num">18/26</span></div></div>
+      </div>
+      <div class="opp-strat">🎯 Compra parcial · Stop R$38.00 · Alvo R$59.95 (PJ) · Maior produtor mundial de celulose de eucalipto</div>
+    </div>
+
+    <div class="opp-card" onclick="jumpToSector('TGMA3')">
+      <div class="opp-card-top">
+        <div class="opp-left">
+          <div class="opp-ticker-wrap">
+            <span class="opp-ticker" id="oi-ticker-TGMA3">TGMA3</span>
+            <span class="signal-tag sig-compra-forte">⭐ COMPRA FORTE</span>
+          </div>
+          <div class="opp-nome">Tegma Gestão Logística</div>
+          <span class="setor-tag" style="background:#FEF3C7;color:#92400E">🚛 Transporte</span>
+        </div>
+        <div class="opp-right">
+          <span class="up-badge up-strong">🚀 +37.2%</span>
+          <div class="opp-price-wrap">
+            <div class="opp-price-row"><span class="opp-price-label">Cotação</span><span class="opp-price val-live" id="oi-price-TGMA3">R$&nbsp;29.54</span></div>
+            <div class="opp-price-row"><span class="opp-price-label">Preço Justo</span><span class="opp-price" style="color:var(--green-700)">R$&nbsp;40,54</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="opp-indicators">
+        <div class="opp-ind"><span class="ind-label">ROIC</span><span class="ind-val">21.4%</span></div>
+        <div class="opp-ind"><span class="ind-label">ROE</span><span class="ind-val">27.1%</span></div>
+        <div class="opp-ind"><span class="ind-label">DY</span><span class="ind-val">13.3%</span></div>
+        <div class="opp-ind"><span class="ind-label">EV/EBIT</span><span class="ind-val">6.6x</span></div>
+        <div class="opp-ind"><span class="ind-label">Factor</span><div class="ind-score-wrap"><div class="score-mini-wrap"><div class="score-mini-bar" style="width:88%;background:#15803D"></div></div><span class="score-mini-num">23/26</span></div></div>
+      </div>
+      <div class="opp-strat">🎯 Compra · Stop R$24,00 · Alvo R$40,54 (PJ) · Logística de veículos · ROA 18.2% excepcional</div>
+    </div>
+
+    <div class="opp-card" onclick="jumpToSector('JSLG3')">
+      <div class="opp-card-top">
+        <div class="opp-left">
+          <div class="opp-ticker-wrap">
+            <span class="opp-ticker" id="oi-ticker-JSLG3">JSLG3</span>
+            <span class="signal-tag sig-compra">✅ COMPRA</span>
+          </div>
+          <div class="opp-nome">JSL SA</div>
+          <span class="setor-tag" style="background:#FEF3C7;color:#92400E">🚛 Transporte</span>
+        </div>
+        <div class="opp-right">
+          <span class="up-badge up-strong">🚀 +39.7%</span>
+          <div class="opp-price-wrap">
+            <div class="opp-price-row"><span class="opp-price-label">Cotação</span><span class="opp-price val-live" id="oi-price-JSLG3">R$&nbsp;6.52</span></div>
+            <div class="opp-price-row"><span class="opp-price-label">Preço Justo</span><span class="opp-price" style="color:var(--green-700)">R$&nbsp;9,11</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="opp-indicators">
+        <div class="opp-ind"><span class="ind-label">ROIC</span><span class="ind-val">9.5%</span></div>
+        <div class="opp-ind"><span class="ind-label">ROE</span><span class="ind-val">5.1%</span></div>
+        <div class="opp-ind"><span class="ind-label">DY</span><span class="ind-val">29.3%</span></div>
+        <div class="opp-ind"><span class="ind-label">EV/EBIT</span><span class="ind-val">7.3x</span></div>
+        <div class="opp-ind"><span class="ind-label">Factor</span><div class="ind-score-wrap"><div class="score-mini-wrap"><div class="score-mini-bar" style="width:65%;background:#16A34A"></div></div><span class="score-mini-num">17/26</span></div></div>
+      </div>
+      <div class="opp-strat">🎯 Compra · Stop R$5,20 · Alvo R$9,11 (PJ) · DY extraordinário · Logística terceirizada</div>
+    </div>
+
+    <div class="opp-card" onclick="jumpToSector('RAIL3')">
+      <div class="opp-card-top">
+        <div class="opp-left">
+          <div class="opp-ticker-wrap">
+            <span class="opp-ticker" id="oi-ticker-RAIL3">RAIL3</span>
+            <span class="signal-tag sig-compra">✅ COMPRA</span>
+          </div>
+          <div class="opp-nome">Rumo Logística</div>
+          <span class="setor-tag" style="background:#FEF3C7;color:#92400E">🚛 Transporte</span>
+        </div>
+        <div class="opp-right">
+          <span class="up-badge up-strong">🚀 +29.9%</span>
+          <div class="opp-price-wrap">
+            <div class="opp-price-row"><span class="opp-price-label">Cotação</span><span class="opp-price val-live" id="oi-price-RAIL3">R$&nbsp;16.11</span></div>
+            <div class="opp-price-row"><span class="opp-price-label">Preço Justo</span><span class="opp-price" style="color:var(--green-700)">R$&nbsp;20,93</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="opp-indicators">
+        <div class="opp-ind"><span class="ind-label">ROIC</span><span class="ind-val">10.5%</span></div>
+        <div class="opp-ind"><span class="ind-label">ROE</span><span class="ind-val">6.0%</span></div>
+        <div class="opp-ind"><span class="ind-label">DY</span><span class="ind-val">4.9%</span></div>
+        <div class="opp-ind"><span class="ind-label">EV/EBIT</span><span class="ind-val">8.8x</span></div>
+        <div class="opp-ind"><span class="ind-label">Factor</span><div class="ind-score-wrap"><div class="score-mini-wrap"><div class="score-mini-bar" style="width:54%;background:#16A34A"></div></div><span class="score-mini-num">14/26</span></div></div>
+      </div>
+      <div class="opp-strat">🎯 Compra · Stop R$13,00 · Alvo R$20,93 (PJ) · Maior operadora ferroviária do Brasil</div>
+    </div>
+
+    <div class="opp-card" onclick="jumpToSector('SIMH3')">
+      <div class="opp-card-top">
+        <div class="opp-left">
+          <div class="opp-ticker-wrap">
+            <span class="opp-ticker" id="oi-ticker-SIMH3">SIMH3</span>
+            <span class="signal-tag sig-compra">✅ COMPRA</span>
+          </div>
+          <div class="opp-nome">Simpar SA</div>
+          <span class="setor-tag" style="background:#FEF3C7;color:#92400E">🚛 Transporte</span>
+        </div>
+        <div class="opp-right">
+          <span class="up-badge up-strong">🚀 +28.2%</span>
+          <div class="opp-price-wrap">
+            <div class="opp-price-row"><span class="opp-price-label">Cotação</span><span class="opp-price val-live" id="oi-price-SIMH3">R$&nbsp;11.12</span></div>
+            <div class="opp-price-row"><span class="opp-price-label">Preço Justo</span><span class="opp-price" style="color:var(--green-700)">R$&nbsp;14,25</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="opp-indicators">
+        <div class="opp-ind"><span class="ind-label">ROIC</span><span class="ind-val">8.1%</span></div>
+        <div class="opp-ind"><span class="ind-label">ROE</span><span class="ind-val">-8.3%</span></div>
+        <div class="opp-ind"><span class="ind-label">DY</span><span class="ind-val">1.2%</span></div>
+        <div class="opp-ind"><span class="ind-label">EV/EBIT</span><span class="ind-val">7.6x</span></div>
+        <div class="opp-ind"><span class="ind-label">Factor</span><div class="ind-score-wrap"><div class="score-mini-wrap"><div class="score-mini-bar" style="width:54%;background:#16A34A"></div></div><span class="score-mini-num">14/26</span></div></div>
+      </div>
+      <div class="opp-strat">🎯 Compra · Stop R$9,00 · Alvo R$14,25 (PJ) · Holding logística; turnaround em andamento</div>
+    </div>
+
+    <div class="opp-card" onclick="jumpToSector('LOGN3')">
+      <div class="opp-card-top">
+        <div class="opp-left">
+          <div class="opp-ticker-wrap">
+            <span class="opp-ticker" id="oi-ticker-LOGN3">LOGN3</span>
+            <span class="signal-tag sig-compra">✅ COMPRA</span>
+          </div>
+          <div class="opp-nome">Log-in Logística Intermodal</div>
+          <span class="setor-tag" style="background:#FEF3C7;color:#92400E">🚛 Transporte</span>
+        </div>
+        <div class="opp-right">
+          <span class="up-badge up-strong">🚀 +27.4%</span>
+          <div class="opp-price-wrap">
+            <div class="opp-price-row"><span class="opp-price-label">Cotação</span><span class="opp-price val-live" id="oi-price-LOGN3">R$&nbsp;31.89</span></div>
+            <div class="opp-price-row"><span class="opp-price-label">Preço Justo</span><span class="opp-price" style="color:var(--green-700)">R$&nbsp;40,63</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="opp-indicators">
+        <div class="opp-ind"><span class="ind-label">ROIC</span><span class="ind-val">11.6%</span></div>
+        <div class="opp-ind"><span class="ind-label">ROE</span><span class="ind-val">9.1%</span></div>
+        <div class="opp-ind"><span class="ind-label">DY</span><span class="ind-val">0.0%</span></div>
+        <div class="opp-ind"><span class="ind-label">EV/EBIT</span><span class="ind-val">9.5x</span></div>
+        <div class="opp-ind"><span class="ind-label">Factor</span><div class="ind-score-wrap"><div class="score-mini-wrap"><div class="score-mini-bar" style="width:62%;background:#16A34A"></div></div><span class="score-mini-num">16/26</span></div></div>
+      </div>
+      <div class="opp-strat">🎯 Compra · Stop R$26,00 · Alvo R$40,63 (PJ) · Cabotagem e navegação de longo curso</div>
+    </div>
+
+    <div class="opp-card" onclick="jumpToSector('ECOR3')">
+      <div class="opp-card-top">
+        <div class="opp-left">
+          <div class="opp-ticker-wrap">
+            <span class="opp-ticker" id="oi-ticker-ECOR3">ECOR3</span>
+            <span class="signal-tag sig-compra">✅ COMPRA</span>
+          </div>
+          <div class="opp-nome">Ecorodovias</div>
+          <span class="setor-tag" style="background:#FEF3C7;color:#92400E">🚛 Transporte</span>
+        </div>
+        <div class="opp-right">
+          <span class="up-badge up-good">✅ +10.9%</span>
+          <div class="opp-price-wrap">
+            <div class="opp-price-row"><span class="opp-price-label">Cotação</span><span class="opp-price val-live" id="oi-price-ECOR3">R$&nbsp;8.16</span></div>
+            <div class="opp-price-row"><span class="opp-price-label">Preço Justo</span><span class="opp-price" style="color:var(--green-700)">R$&nbsp;9,05</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="opp-indicators">
+        <div class="opp-ind"><span class="ind-label">ROIC</span><span class="ind-val">8.2%</span></div>
+        <div class="opp-ind"><span class="ind-label">ROE</span><span class="ind-val">21.5%</span></div>
+        <div class="opp-ind"><span class="ind-label">DY</span><span class="ind-val">3.8%</span></div>
+        <div class="opp-ind"><span class="ind-label">EV/EBIT</span><span class="ind-val">6.9x</span></div>
+        <div class="opp-ind"><span class="ind-label">Factor</span><div class="ind-score-wrap"><div class="score-mini-wrap"><div class="score-mini-bar" style="width:58%;background:#16A34A"></div></div><span class="score-mini-num">15/26</span></div></div>
+      </div>
+      <div class="opp-strat">🎯 Compra · Stop R$6,80 · Alvo R$9,05 (PJ) · Concessões rodoviárias · DY 3.8%</div>
+    </div>
       </div>
     </div>
 
@@ -1234,10 +1486,10 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
           <div class="soi-count">18 empresas · 5 sub-setores</div>
           <div class="soi-top">Top: RDOR3 · FLRY3 · GMAT3</div>
         </div>
-        <div class="sec-overview-item" style="background:var(--green-50);border-style:dashed;">
-          <div class="soi-icon">🔜</div><div class="soi-name">Novos Setores</div>
-          <div class="soi-count">Em desenvolvimento</div>
-          <div class="soi-top" style="color:var(--amber)">Bancos · Varejo · Mineração...</div>
+        <div class="sec-overview-item" onclick="showSector('prodindustrial',document.querySelector('[onclick*=prodindustrial]')">
+          <div class="soi-icon">🏭</div><div class="soi-name">Produção Industrial</div>
+          <div class="soi-count">4 empresas · 3 sub-setores</div>
+          <div class="soi-top">Top: RANI3 · SUZB3 · KLBN3</div>
         </div>
       </div>
     </div>
@@ -1424,33 +1676,112 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
 </div>
 
 <!-- ═══════════════════════════════════════════════════
-     HISTÓRICO DB
+     HISTÓRICO
 ════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════
+     PRODUÇÃO INDUSTRIAL (MADEIRA, PAPEL, QUÍMICOS)
+════════════════════════════════════════════════════ -->
+<div id="panel-prodindustrial" class="sector-panel">
+  <div class="sec-header">
+    <div>
+      <div class="sh-badge">🏭 Factor Invest · B3</div>
+      <h2>Produção Industrial — Madeira, Papel &amp; Químicos</h2>
+      <div class="sh-sub">4 empresas · 13 fatores · 3 sub-setores · <span class="data-date">Base: Market View 2026-05-04</span></div>
+    </div>
+    <div class="sec-header-right">
+      <div style="font-size:11px;color:rgba(255,255,255,0.6);">Cotações via Brapi.dev</div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <div class="summary-card"><span class="sc-label">🏆 Top Compra Forte</span><span class="sc-value">RANI3 · SUZB3 · KLBN3</span><span class="sc-sub">20pts · 18pts · 16pts</span></div>
+    <div class="summary-card"><span class="sc-label">📈 Maiores Upsides</span><span class="sc-value" id="PI_topUpside">Calculando...</span><span class="sc-sub">vs. Preço Justo — atualiza ao vivo</span></div>
+    <div class="summary-card"><span class="sc-label">💰 Maior Dividend Yield</span><span class="sc-value">KLBN3 8.51% · RANI3 6.17%</span><span class="sc-sub">DY base — dados fundamentalistas</span></div>
+    <div class="summary-card"><span class="sc-label">📊 Empresas Analisadas</span><span class="sc-value">4 Empresas · 3 Sub-Setores</span><span class="sc-sub">Papel &amp; Celulose · Madeira/Painéis · Químicos</span></div>
+  </div>
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('PI','ranking',this)">🏆 Ranking do Setor</button>
+    <button class="tab-btn" onclick="showTab('PI','factor',this)">🔍 Factor Detalhado</button>
+    <button class="tab-btn" onclick="showTab('PI','mestra',this)">📊 Tabela Mestra</button>
+    <button class="tab-btn" onclick="showTab('PI','projecoes',this)">💰 Projeções DCF</button>
+    <button class="tab-btn" onclick="showTab('PI','analise',this)">📋 Análise Detalhada</button>
+    <button class="tab-btn" onclick="showTab('PI','decisorio',this)">🎯 Quadro Decisório</button>
+  </nav>
+  <section id="PI_tab-ranking" class="section active">
+    <div class="section-header"><h3>🏆 Ranking Factor Invest — Produção Industrial B3</h3><p>Ordenado por Pontuação Factor Invest. Preço Atual e Upside FV atualizam automaticamente ao vivo.</p></div>
+    <div class="table-wrap"><table><thead><tr><th>#</th><th>Ticker</th><th>Nome</th><th>Sub-Setor</th><th>Preço Atual</th><th>P. Justo</th><th>Classif.</th><th>Upside FV</th><th>ROIC</th><th>ROA</th><th>ROE</th><th>P/L</th><th>EV/EBIT</th><th>Div.Yield</th><th>Dív/Ativo</th><th>Ret. 1 Ano</th><th>Veredicto</th><th>Pontuação</th></tr></thead><tbody id="PI_rankingTbody"></tbody></table>
+    <div class="legend"><span class="legend-item"><span class="live-dot"></span> Preço ao vivo (Brapi.dev)</span></div></div>
+  </section>
+  <section id="PI_tab-factor" class="section"><div class="section-header"><h3>🔍 Factor Invest Detalhado — Heatmap por Sub-Setor</h3><p>🟢 Forte (2pts) · 🟡 Neutro (1pt) · 🔴 Fraco (0pt)</p></div><div id="PI_factorContent"></div><div class="method-box"><strong>Metodologia (13 fatores / 26 pontos):</strong> ROIC &gt;10%=2|6-10%=1|&lt;6%=0 · ROA &gt;6%=2|3-6%=1|&lt;3%=0 · ROE &gt;15%=2|8-15%=1|&lt;8%=0 · P/L &lt;10x=2|10-20x=1|&gt;20x=0 · EV/EBIT &lt;8x=2|8-15x=1|&gt;15x=0 · DY &gt;6%=2|3-6%=1|&lt;3%=0 · P/FCO &lt;10x=2|10-20x=1|&gt;20x=0 · P/Book &lt;1.5x=2|1.5-3x=1|&gt;3x=0 · Dív/Ativo &lt;40%=2|40-65%=1|&gt;65%=0 · Cresc.Dívida &lt;5%=2|5-20%=1|&gt;20%=0 · Upside FV &gt;15%=2|5-15%=1|&lt;5%=0 · Classif. Pechincha/Barato=2|Justo=1|Caro=0 · Momentum 1A &gt;30%=2|10-30%=1|&lt;10%=0</div></section>
+  <section id="PI_tab-mestra" class="section"><div class="section-header"><h3>📊 Tabela Mestra — Comparativo Completo</h3><p>Todos os indicadores para as 4 empresas do setor. Preço Atual e Upside atualizam ao vivo.</p></div><div class="table-wrap"><table><thead id="PI_mestraThead"></thead><tbody id="PI_mestraTbody"></tbody></table></div></section>
+  <section id="PI_tab-projecoes" class="section"><div class="section-header"><h3>💰 Projeções Fundamentalistas — DCF &amp; Cenários</h3><p>WACC setorial: 10.5% (Papel &amp; Celulose) / 11.0% (Madeira &amp; Painéis) / 11.5% (Químicos). Retornos calculados sobre preço ao vivo.</p></div><div class="method-box"><strong>Cenários:</strong> Pessimista = PJ −20% · Realista = PJ do modelo · Otimista = PJ +20%</div><div class="proj-grid" id="PI_projContent"></div></section>
+  <section id="PI_tab-analise" class="section"><div class="section-header"><h3>📋 Análise Detalhada — Por Empresa e Sub-Setor</h3><p>Pontos positivos, negativos, fluxo de caixa, valuation e estratégia para cada empresa.</p></div><div class="analise-grid" id="PI_analiseContent"></div></section>
+  <section id="PI_tab-decisorio" class="section"><div class="section-header"><h3>🎯 Quadro Decisório Final — Por Sub-Setor</h3><p>Ranking integrado: Factor Invest + Saúde Financeira + DCF + Valuation + Momento. Preço × FV atualiza ao vivo.</p></div><div id="PI_decisorioContent"></div><div class="aviso-box">⚠️ Esta análise tem caráter educacional e informativo. Não constitui recomendação de investimento.</div></section>
+  <div class="site-footer">Factor Invest — Produção Industrial B3 · Base: Market View 2026-05-04 · Cotações ao vivo via Brapi.dev · Material educacional.</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     TRANSPORTE & LOGÍSTICA
+════════════════════════════════════════════════════ -->
+<div id="panel-transporte" class="sector-panel">
+  <div class="sec-header">
+    <div>
+      <div class="sh-badge">🚛 Factor Invest · B3</div>
+      <h2>Transporte & Logística — Análise Setorial</h2>
+      <div class="sh-sub">8 empresas · 13 fatores · 4 sub-setores · <span class="data-date">Base: Market View 2026</span></div>
+    </div>
+  </div>
+  <div class="summary-bar">
+    <div class="summary-card"><span class="sc-label">🏆 Top Compra Forte</span><span class="sc-value">TGMA3 · STBP3</span><span class="sc-sub">23pts · 20pts</span></div>
+    <div class="summary-card"><span class="sc-label">📈 Maiores Upsides</span><span class="sc-value" id="TRP_topUpside">Calculando...</span><span class="sc-sub">vs. Preço Justo — atualiza ao vivo</span></div>
+    <div class="summary-card"><span class="sc-label">💰 Maior Dividend Yield</span><span class="sc-value">JSLG3 29.3% · TGMA3 13.3%</span><span class="sc-sub">DY base — dados fundamentalistas</span></div>
+    <div class="summary-card"><span class="sc-label">📊 Empresas Analisadas</span><span class="sc-value">8 Empresas · 4 Sub-Setores</span><span class="sc-sub">Logística · Ferrov. · Portos · Rodovias</span></div>
+  </div>
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('TRP','ranking',this)">🏆 Ranking do Setor</button>
+    <button class="tab-btn" onclick="showTab('TRP','factor',this)">🔍 Factor Detalhado</button>
+    <button class="tab-btn" onclick="showTab('TRP','mestra',this)">📊 Tabela Mestra</button>
+    <button class="tab-btn" onclick="showTab('TRP','projecoes',this)">💰 Projeções DCF</button>
+    <button class="tab-btn" onclick="showTab('TRP','analise',this)">📋 Análise Detalhada</button>
+    <button class="tab-btn" onclick="showTab('TRP','decisorio',this)">🎯 Quadro Decisório</button>
+  </nav>
+  <section id="TRP_tab-ranking" class="section active"><div class="section-header"><h3>🏆 Ranking Factor Invest — Transporte & Logística B3</h3><p>Ordenado por Pontuação Factor Invest. Preço Atual e Upside FV atualizam automaticamente ao vivo.</p></div><div class="table-wrap"><table><thead><tr><th>#</th><th>Ticker</th><th>Nome</th><th>Sub-Setor</th><th>Preço Atual</th><th>P. Justo</th><th>Classif.</th><th>Upside FV</th><th>ROIC</th><th>ROA</th><th>ROE</th><th>P/L</th><th>EV/EBIT</th><th>Div.Yield</th><th>Dív/Ativo</th><th>Veredicto</th><th>Pontuação</th></tr></thead><tbody id="TRP_rankingTbody"></tbody></table><div class="legend"><span class="legend-item"><span class="live-dot"></span> Preço ao vivo</span></div></div></section>
+  <section id="TRP_tab-factor" class="section"><div class="section-header"><h3>🔍 Factor Invest Detalhado — Heatmap por Sub-Setor</h3><p>🟢 Forte (2pts) · 🟡 Neutro (1pt) · 🔴 Fraco (0pt)</p></div><div id="TRP_factorContent"></div><div class="method-box"><strong>Metodologia (13 fatores / 26 pontos):</strong> ROIC >10%=2|6-10%=1|&lt;6%=0 · ROA >6%=2|3-6%=1|&lt;3%=0 · ROE >15%=2|8-15%=1|&lt;8%=0 · P/L &lt;10x=2|10-20x=1|>20x=0 · EV/EBIT &lt;8x=2|8-15x=1|>15x=0 · DY >6%=2|3-6%=1|&lt;3%=0 · P/FCO &lt;10x=2|10-20x=1|>20x=0 · P/Book &lt;1.5x=2|1.5-3x=1|>3x=0 · Dív/Ativo &lt;40%=2|40-65%=1|>65%=0 · Cresc.Dívida &lt;5%=2|5-20%=1|>20%=0 · Upside FV >15%=2|5-15%=1|&lt;5%=0 · Classif. Pechincha/Barato=2|Justo=1|Caro=0 · Momentum 1A >30%=2|10-30%=1|&lt;10%=0</div></section>
+  <section id="TRP_tab-mestra" class="section"><div class="section-header"><h3>📊 Tabela Mestra — Comparativo Completo</h3><p>Todos os indicadores. Preço Atual e Upside atualizam ao vivo.</p></div><div class="table-wrap"><table><thead id="TRP_mestraThead"></thead><tbody id="TRP_mestraTbody"></tbody></table></div></section>
+  <section id="TRP_tab-projecoes" class="section"><div class="section-header"><h3>💰 Projeções Fundamentalistas — DCF & Cenários</h3><p>WACC setorial: 9.5% (Ferroviário) / 10.0% (Logística) / 9.0% (Portos) / 10.5% (Rodovias). Retornos sobre preço ao vivo.</p></div><div class="method-box"><strong>Cenários:</strong> Pessimista = PJ −20% · Realista = PJ do modelo · Otimista = PJ +20%</div><div class="proj-grid" id="TRP_projContent"></div></section>
+  <section id="TRP_tab-analise" class="section"><div class="section-header"><h3>📋 Análise Detalhada — Por Empresa e Sub-Setor</h3><p>Pontos positivos, negativos, fluxo de caixa, valuation e estratégia para cada empresa.</p></div><div class="analise-grid" id="TRP_analiseContent"></div></section>
+  <section id="TRP_tab-decisorio" class="section"><div class="section-header"><h3>🎯 Quadro Decisório Final — Por Sub-Setor</h3><p>Ranking integrado: Factor + Saúde + DCF + Valuation + Momento. Preço × FV ao vivo.</p></div><div id="TRP_decisorioContent"></div><div class="aviso-box">⚠️ Esta análise tem caráter educacional e informativo. Não constitui recomendação de investimento.</div></section>
+  <div class="site-footer">Factor Invest — Transporte & Logística B3 · Base: Market View 2026 · Material educacional.</div>
+</div>
+
 <div id="panel-historico" class="sector-panel">
   <div class="sec-header">
     <div>
-      <div class="sh-badge">📚 Banco de Dados · Factor Invest</div>
+      <div class="sh-badge">📚 Histórico Trimestral · Factor Invest</div>
       <h2>Histórico Trimestral — Factor Invest & Valuation</h2>
-      <div class="sh-sub">Registre e compare indicadores ao longo dos trimestres para identificar tendências estruturais</div>
+      <div class="sh-sub">Registre e compare indicadores ao longo dos trimestres — acompanhe se a empresa está entregando resultados sólidos e evoluindo de forma consistente</div>
     </div>
   </div>
   <div style="padding:20px;">
     <div class="hist-panel">
-      <div class="hist-header">
-        <span>📥 Registrar Snapshot Trimestral</span>
-        <div class="hist-controls">
-          <select id="hist_sector">
-            <option value="EN">⚡ Energia Elétrica</option>
-            <option value="PET">🛢️ Petróleo & Gás</option>
-            <option value="IMO">🏗️ Imobiliário</option>
-            <option value="EQ">⚙️ Equipamentos</option>
-            <option value="SAU">🏥 Saúde</option>
-          </select>
-          <select id="hist_ticker_select" style="min-width:120px;">
-            <option>Selecionar empresa...</option>
-          </select>
-          <input type="text" id="hist_quarter" placeholder="Ex: 4T2025" style="width:90px;">
-          <button class="hist-save-btn" onclick="saveHistorySnapshot()">💾 Salvar Snapshot</button>
+      <div class="hist-header" style="flex-direction:column;align-items:stretch;gap:10px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <span>📥 Registrar Snapshot Trimestral</span>
+          <div class="hist-controls">
+            <select id="hist_sector">
+              <option value="EN">⚡ Energia Elétrica</option>
+              <option value="PET">🛢️ Petróleo & Gás</option>
+              <option value="IMO">🏗️ Imobiliário</option>
+              <option value="EQ">⚙️ Equipamentos</option>
+              <option value="SAU">🏥 Saúde</option>
+              <option value="PI">🏭 Prod. Industrial</option>
+            </select>
+            <select id="hist_ticker_select" style="min-width:120px;">
+              <option>Selecionar empresa...</option>
+            </select>
+            <input type="text" id="hist_quarter" placeholder="Ex: 4T2025" style="width:90px;">
+            <button class="hist-save-btn" onclick="saveHistorySnapshot()">💾 Salvar Snapshot</button>
+          </div>
         </div>
       </div>
       <div class="hist-body">
@@ -1463,6 +1794,7 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
             <option value="IMO">Imobiliário</option>
             <option value="EQ">Equipamentos</option>
             <option value="SAU">Saúde</option>
+            <option value="PI">Prod. Industrial</option>
           </select>
           <select id="hist_filter_ticker" onchange="renderHistory()" style="font-size:12px;padding:4px 8px;border:1px solid var(--green-100);border-radius:6px;margin-right:8px;">
             <option value="">Todas as Empresas</option>
@@ -1475,13 +1807,29 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
       </div>
     </div>
 
-    <div style="background:var(--green-50);border:1px solid var(--green-100);border-radius:10px;padding:16px;margin-bottom:18px;">
-      <h3 style="font-size:15px;font-weight:700;color:var(--green-800);margin-bottom:10px;">ℹ️ Como usar o Histórico Trimestral</h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;font-size:12px;color:var(--slate);line-height:1.5;">
-        <div><strong style="color:var(--green-800);">1. Registre regularmente</strong><br>Após cada resultado trimestral, acesse o setor, selecione a empresa e salve um snapshot com o código do trimestre (ex: 1T2026).</div>
-        <div><strong style="color:var(--green-800);">2. Compare evolução</strong><br>Visualize aqui como os indicadores ROIC, ROE, score Factor, upside e classificação evoluíram ao longo dos trimestres.</div>
-        <div><strong style="color:var(--green-800);">3. Identifique tendências</strong><br>Distingua melhoras estruturais (tendência consistente por 2-3 trimestres) de resultados esporádicos que melhoram o factor apenas pontualmente.</div>
-        <div><strong style="color:var(--green-800);">4. Tome decisões melhores</strong><br>Uma empresa que melhora consistentemente os indicadores por 3 trimestres seguidos é mais confiável do que outra com apenas um resultado pontual excelente.</div>
+    <div style="background:var(--green-50);border:1px solid var(--green-100);border-radius:10px;padding:18px 20px;margin-bottom:18px;">
+      <h3 style="font-size:15px;font-weight:700;color:var(--green-800);margin-bottom:6px;">ℹ️ Como usar o Histórico Trimestral</h3>
+      <p style="font-size:12px;color:var(--slate);margin-bottom:14px;line-height:1.6;">O Histórico Trimestral é a ferramenta que transforma a análise Factor Invest em um acompanhamento contínuo. Uma oportunidade identificada pode ser um simples desconto pontual da cotação — ou o reflexo real de uma empresa em crescimento. O histórico é o que permite distinguir as duas situações.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;font-size:12px;color:var(--slate);line-height:1.6;">
+        <div style="background:white;border:1px solid var(--green-100);border-radius:8px;padding:12px;">
+          <strong style="color:var(--green-800);font-size:12px;">📥 1. Registre após cada resultado</strong><br><br>
+          Após a divulgação de cada resultado trimestral, selecione o setor, a empresa e informe o trimestre (ex: 1T2026). Clique em Salvar Snapshot para registrar os indicadores Factor Invest naquele momento.
+        </div>
+        <div style="background:white;border:1px solid var(--green-100);border-radius:8px;padding:12px;">
+          <strong style="color:var(--green-800);font-size:12px;">📊 2. Acompanhe a evolução dos indicadores</strong><br><br>
+          Acompanhe a evolução dos indicadores Factor Invest — ROIC, ROE, Score, Upside — trimestre a trimestre. Empresas que melhoram consistentemente seus fundamentos tendem a ter o preço justo revisado para cima ao longo do tempo.
+        </div>
+        <div style="background:white;border:1px solid var(--green-100);border-radius:8px;padding:12px;">
+          <strong style="color:var(--green-800);font-size:12px;">📈 3. Identifique tendências estruturais</strong><br><br>
+          Compare ROIC, ROE, Score Factor e upside ao longo dos trimestres. Uma melhora consistente por 2–3 trimestres seguidos indica saúde financeira real — e não apenas um desconto pontual de mercado ou um resultado isolado. É isso que fundamenta a tese de investimento.
+        </div>
+        <div style="background:white;border:1px solid var(--green-100);border-radius:8px;padding:12px;">
+          <strong style="color:var(--green-800);font-size:12px;">🎯 4. Fundamente a tomada de decisão</strong><br><br>
+          A análise Factor Invest é um processo contínuo — não uma decisão pontual. O histórico é o que permite saber se a empresa está de fato cumprindo com o que o mercado espera, gerando lucro, controlando dívidas e crescendo, ou se a oportunidade já passou.
+        </div>
+      </div>
+      <div style="background:#FFF7ED;border:1px solid #FED7AA;border-left:3px solid #F59E0B;border-radius:6px;padding:10px 13px;margin-top:14px;font-size:11px;color:#92400E;">
+        ⚠️ <strong>Aviso importante:</strong> Esta análise tem caráter estritamente educacional e informativo. Não constitui recomendação de investimento. Consulte sempre um profissional habilitado antes de tomar decisões financeiras.
       </div>
     </div>
   </div>
@@ -1489,7 +1837,7 @@ thead .sticky-col{background:var(--green-800);z-index:11;}
 
 <!-- ═══ FOOTER ═══ -->
 <div class="site-footer">
-  EASY Invest — Factor Invest & Valuation B3 · Análise de 80 empresas em 5 setores · Cotações ao vivo via Brapi.dev · <strong>Material educacional, não recomendação de investimento.</strong>
+  EASY Invest — Factor Invest & Valuation B3 · Análise de 92 empresas em 7 setores · Cotações ao vivo via Brapi.dev · <strong>Material educacional, não recomendação de investimento.</strong>
 </div>
 
 <script>
@@ -1833,7 +2181,7 @@ async function fetchAllSectorPrices() {
   marketEl.textContent = marketOpen ? '🟢 Mercado Aberto (B3)' : '🔴 Mercado Fechado';
 
   const allTickers = [
-    ...EN_COMPANIES, ...PET_COMPANIES, ...IMO_COMPANIES, ...EQ_COMPANIES, ...SAU_COMPANIES
+    ...EN_COMPANIES, ...PET_COMPANIES, ...IMO_COMPANIES, ...EQ_COMPANIES, ...SAU_COMPANIES, ...TRP_COMPANIES
   ].map(c => c.ticker);
   const uniqueTickers = [...new Set(allTickers)];
 
@@ -1868,11 +2216,13 @@ function refreshAllSectorRenders() {
   updateAllLivePricesIn('IMO', IMO_COMPANIES);
   updateAllLivePricesIn('EQ', EQ_COMPANIES);
   updateAllLivePricesIn('SAU', SAU_COMPANIES);
+  updateAllLivePricesIn('TRP', TRP_COMPANIES);
   updateTopUpsideFor('EN', EN_COMPANIES, 'EN_topUpside');
   updateTopUpsideFor('PET', PET_COMPANIES, 'PET_topUpside');
   updateTopUpsideFor('IMO', IMO_COMPANIES, 'IMO_topUpside');
   updateTopUpsideFor('EQ', EQ_COMPANIES, 'EQ_topUpside');
   updateTopUpsideFor('SAU', SAU_COMPANIES, 'SAU_topUpside');
+  updateTopUpsideFor('TRP', TRP_COMPANIES, 'TRP_topUpside');
 }
 
 function updateGlobalTopUpside() {
@@ -1882,6 +2232,7 @@ function updateGlobalTopUpside() {
     ...IMO_COMPANIES.map(c => ({ticker:c.ticker, sector:'IMO', upside:getUpside(c.ticker, IMO_COMPANIES)})),
     ...EQ_COMPANIES.map(c => ({ticker:c.ticker, sector:'EQ', upside:getUpside(c.ticker, EQ_COMPANIES)})),
     ...SAU_COMPANIES.map(c => ({ticker:c.ticker, sector:'SAU', upside:getUpside(c.ticker, SAU_COMPANIES)})),
+    ...TRP_COMPANIES.map(c => ({ticker:c.ticker, sector:'TRP', upside:getUpside(c.ticker, TRP_COMPANIES)})),
   ].sort((a,b) => b.upside - a.upside);
   const el = document.getElementById('globalTopUpside');
   if (el) el.textContent = all.slice(0,3).map(x => x.ticker + ' ' + fmtPct(x.upside)).join(' · ');
@@ -1903,7 +2254,7 @@ function showSector(id, btn) {
 }
 
 function showTab(prefix, tabId, btn) {
-  const panel = document.getElementById('panel-' + {EN:'energia',PET:'petroleo',IMO:'imobiliario',EQ:'equipamentos',SAU:'saude'}[prefix]);
+  const panel = document.getElementById('panel-' + {EN:'energia',PET:'petroleo',IMO:'imobiliario',EQ:'equipamentos',SAU:'saude',PI:'prodindustrial',TRP:'transporte'}[prefix]);
   if (!panel) return;
   panel.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   panel.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -1928,13 +2279,14 @@ function saveHistorySnapshot() {
   if (!ticker || ticker === 'Selecionar empresa...') { alert('Selecione uma empresa.'); return; }
   if (!quarter) { alert('Informe o trimestre (ex: 4T2025).'); return; }
 
-  const companiesMap = {EN: EN_COMPANIES, PET: PET_COMPANIES, IMO: IMO_COMPANIES, EQ: EQ_COMPANIES, SAU: SAU_COMPANIES};
+  const companiesMap = {EN: EN_COMPANIES, PET: PET_COMPANIES, IMO: IMO_COMPANIES, EQ: EQ_COMPANIES, SAU: SAU_COMPANIES, PI: PI_COMPANIES, TRP: TRP_COMPANIES};
   const companies = companiesMap[sector] || [];
   const c = companies.find(x => x.ticker === ticker);
   if (!c) { alert('Empresa não encontrada.'); return; }
 
   const price = getPrice(ticker, companies);
   const upside = getUpside(ticker, companies);
+
   const db = getHistoryDB();
   const entry = {
     id: Date.now(),
@@ -1988,7 +2340,7 @@ function renderHistory() {
   if (!el) return;
   if (!db.length) { el.innerHTML = '<div class="hist-empty">📊 Nenhum registro encontrado.<br>Salve snapshots trimestrais para acompanhar a evolução dos indicadores.</div>'; return; }
 
-  const sectorLabel = {EN:'⚡ Energia',PET:'🛢️ Petróleo',IMO:'🏗️ Imobiliário',EQ:'⚙️ Equipamentos',SAU:'🏥 Saúde'};
+  const sectorLabel = {EN:'⚡ Energia',PET:'🛢️ Petróleo',IMO:'🏗️ Imobiliário',EQ:'⚙️ Equipamentos',SAU:'🏥 Saúde',PI:'🏭 Prod. Industrial'};
   let html = '<div class="hist-timeline">';
   db.forEach(e => {
     const savedDate = new Date(e.savedAt).toLocaleDateString('pt-BR');
@@ -2035,7 +2387,7 @@ function renderHistory() {
 
 function updateHistTickerSelect() {
   const sector = document.getElementById('hist_sector').value;
-  const companiesMap = {EN: EN_COMPANIES, PET: PET_COMPANIES, IMO: IMO_COMPANIES, EQ: EQ_COMPANIES, SAU: SAU_COMPANIES};
+  const companiesMap = {EN: EN_COMPANIES, PET: PET_COMPANIES, IMO: IMO_COMPANIES, EQ: EQ_COMPANIES, SAU: SAU_COMPANIES, PI: PI_COMPANIES, TRP: TRP_COMPANIES};
   const companies = companiesMap[sector] || [];
   const sel = document.getElementById('hist_ticker_select');
   if (sel) sel.innerHTML = '<option>Selecionar empresa...</option>' +
@@ -2043,6 +2395,238 @@ function updateHistTickerSelect() {
 }
 document.getElementById('hist_sector')?.addEventListener('change', updateHistTickerSelect);
 </script>
+
+<!-- ═══════════════════════════════════════════════════
+     EASY FACTOR — METODOLOGIA
+════════════════════════════════════════════════════ -->
+<div id="panel-easyfactor" class="sector-panel">
+
+  <!-- HERO -->
+  <div class="ef-hero">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:16px;">📘 Metodologia · EASY Invest</div>
+    <h1>O que é o Factor Invest?</h1>
+    <p>A análise Factor Invest da EASY combina indicadores fundamentalistas de qualidade, saúde financeira e valuation para ranquear empresas dentro de cada setor da bolsa brasileira. Identificando de forma sistemática quais ativos oferecem a melhor relação entre qualidade e preço.</p>
+    <div class="ef-hero-badges">
+      <span class="ef-hero-badge">📊 Análise Quantitativa</span>
+      <span class="ef-hero-badge">🔄 Acompanhamento Trimestral</span>
+      <span class="ef-hero-badge">🎯 Ranking por Setor</span>
+      <span class="ef-hero-badge">💡 Educação Financeira</span>
+    </div>
+  </div>
+
+  <div class="ef-body">
+
+    <!-- AVISO EDUCACIONAL -->
+    <div class="ef-aviso">
+      ⚠️ <strong>Aviso importante:</strong> Toda a análise apresentada nesta plataforma tem caráter estritamente <strong>educacional e informativo</strong>. Não constitui recomendação de compra ou venda de qualquer ativo. O investidor deve realizar sua própria análise e, se necessário, consultar um profissional de investimentos habilitado antes de tomar qualquer decisão financeira. Investimentos envolvem riscos, incluindo a possibilidade de perda do capital investido.
+    </div>
+
+    <!-- O QUE É -->
+    <div class="ef-card">
+      <h3>🔍 O que é o Factor Invest?</h3>
+      <p>O <strong>Factor Invest</strong> é uma metodologia de análise fundamentalista que atribui uma pontuação (score) a cada empresa com base em um conjunto de indicadores financeiros objetivos. Em vez de analisar uma empresa de forma isolada, o Factor Invest <strong>compara todas as empresas de um mesmo setor</strong> entre si — identificando quais se destacam em qualidade, eficiência e preço.</p>
+      <p style="margin-top:10px;">A lógica é simples: empresas com maior geração de caixa, menor endividamento, melhor retorno sobre capital e cotadas abaixo do seu preço justo tendem, no longo prazo, a gerar melhores retornos para os investidores. O Factor Invest é a ferramenta que quantifica e organiza esse processo de avaliação.</p>
+    </div>
+
+    <!-- POR QUE USAR -->
+    <div class="ef-card">
+      <h3>💡 Por que usar análise por fatores?</h3>
+      <p>A análise factor-based resolve dois dos maiores desafios do investidor individual: <strong>objetividade</strong> e <strong>consistência</strong>. Ao definir critérios claros e aplicá-los igualmente a todas as empresas de um setor, elimina-se o viés de escolher empresas "famosas" ou com histórico recente de alta. O resultado é um ranking que reflete a realidade financeira das empresas — não a narrativa do momento.</p>
+      <ul>
+        <li><strong>Elimina subjetividade:</strong> os indicadores falam por si — não há espaço para achismos.</li>
+        <li><strong>Facilita comparação setorial:</strong> o ranking mostra, dentro do mesmo setor e subsetor, quem está melhor posicionado.</li>
+        <li><strong>Combina qualidade + preço:</strong> uma empresa excelente a um preço excessivo pode ser uma armadilha; o Factor Invest cruza os dois eixos.</li>
+        <li><strong>Funciona ao longo do tempo:</strong> o acompanhamento trimestral mostra a evolução real da empresa — e não apenas o retrato de um único momento.</li>
+      </ul>
+    </div>
+
+    <!-- INDICADORES -->
+    <div style="margin-bottom:20px;">
+      <div class="ef-section-title">📐 Os Indicadores da Análise</div>
+      <div class="ef-section-sub">Cada indicador avalia uma dimensão diferente da empresa. Juntos, eles formam uma visão completa sobre qualidade, eficiência, endividamento, geração de caixa e valuation.</div>
+      <div class="ef-indicators-grid">
+
+        <div class="ef-ind">
+          <div class="ei-tag">ROIC</div>
+          <h4>Retorno sobre o Capital Investido</h4>
+          <p>Mede quanto a empresa gera de lucro para cada real de capital total investido (próprio + de terceiros). É o principal indicador de <strong>eficiência de alocação de capital</strong>. ROIC acima do custo de capital (WACC) indica que a empresa está criando valor — abaixo, está destruindo. Empresas com ROIC consistentemente alto ao longo dos trimestres são candidatas sólidas para investimento.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">ROE</div>
+          <h4>Retorno sobre o Patrimônio Líquido</h4>
+          <p>Indica quanto de lucro a empresa gera para cada real de patrimônio dos acionistas. É uma medida de <strong>rentabilidade para o sócio</strong>. ROE elevado pode indicar alta eficiência ou alta alavancagem — por isso deve ser analisado junto ao endividamento. Empresas com ROE alto e dívida controlada são as mais atraentes.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">ROA</div>
+          <h4>Retorno sobre os Ativos</h4>
+          <p>Mede quanto de lucro a empresa extrai do total de ativos que possui. Indica a <strong>eficiência operacional</strong> independentemente da estrutura de capital. Um ROA crescente ao longo dos trimestres sinaliza que a empresa está usando melhor seus recursos — máquinas, estoques, recebíveis — para gerar resultados.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">EV/EBIT</div>
+          <h4>Valor da Empresa / EBIT</h4>
+          <p>Relaciona o valor total da empresa (valor de mercado + dívida líquida) com o seu resultado operacional. É um dos mais utilizados para comparar <strong>valuation entre empresas do mesmo setor</strong>, pois elimina distorções tributárias. Quanto mais baixo o EV/EBIT em relação aos pares, mais barata está a empresa em termos operacionais.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">P/L</div>
+          <h4>Preço sobre Lucro</h4>
+          <p>Indica quantos anos de lucro atual seriam necessários para "pagar" o preço da ação. É o indicador de valuation mais popular e de fácil leitura. <strong>P/L baixo pode indicar ação barata — ou empresa em dificuldade</strong>. Por isso, deve ser analisado em conjunto com a qualidade dos lucros e a tendência de crescimento da empresa.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">DY</div>
+          <h4>Dividend Yield</h4>
+          <p>Mede o percentual de dividendos pagos em relação ao preço atual da ação. Além de indicar retorno direto ao acionista, um <strong>DY alto e consistente</strong> sinaliza que a empresa gera caixa livre suficiente para distribuir — o que é um forte sinal de saúde financeira e maturidade operacional. Setores como energia e telecomunicações costumam ter DY estruturalmente mais elevado.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">Dív/Ativo</div>
+          <h4>Dívida sobre Ativo Total</h4>
+          <p>Indica o grau de alavancagem financeira da empresa — que parcela dos ativos foi financiada com dívida. Quanto menor, mais <strong>conservadora é a estrutura de capital</strong>. Empresas muito endividadas ficam vulneráveis em ciclos de juros altos ou queda de receita. No Brasil, onde a taxa básica é historicamente elevada, controle de endividamento é fator crítico para sobrevivência e crescimento.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">Score Factor</div>
+          <h4>Pontuação Factor Invest EASY</h4>
+          <p>É o score final calculado com base em todos os indicadores acima, comparados com a média do setor. Cada indicador recebe uma pontuação de 0, 1 ou 2 pontos conforme esteja abaixo, na média ou acima da média setorial. A soma forma o <strong>Score Factor</strong> — quanto maior, mais destacada é a empresa dentro do seu setor em termos de qualidade e eficiência.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">Preço Justo</div>
+          <h4>Valuation por Fluxo de Caixa Descontado</h4>
+          <p>O Preço Justo é calculado pela metodologia de <strong>Fluxo de Caixa Descontado (DCF)</strong> — que projeta os resultados futuros da empresa e os traz a valor presente usando uma taxa de desconto (WACC) que reflete o custo de capital e o risco do negócio. Empresas cotadas abaixo do preço justo oferecem uma margem de segurança ao investidor. Três cenários são apresentados: pessimista, realista e otimista.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">Upside</div>
+          <h4>Potencial de Valorização</h4>
+          <p>É a diferença percentual entre a cotação atual e o Preço Justo calculado. <strong>Upside positivo</strong> indica que o ativo está abaixo do valor justo — potencial de valorização. <strong>Upside negativo</strong> indica que o ativo está caro. Este é o único indicador que se atualiza em tempo real conforme a cotação muda — todos os outros são calculados com base nos dados fundamentalistas do último trimestre.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">EBITDA</div>
+          <h4>Resultado Operacional Antes de Juros, Impostos, Depreciação e Amortização</h4>
+          <p>É a medida mais usada para avaliar a <strong>geração operacional de caixa</strong>. Elimina efeitos contábeis (depreciação/amortização) e financeiros (juros/impostos), mostrando a capacidade real da empresa de gerar resultado com sua operação. O crescimento consistente do EBITDA ao longo dos trimestres é um dos principais sinais de saúde e expansão do negócio.</p>
+        </div>
+
+        <div class="ef-ind">
+          <div class="ei-tag">FCL / Caixa</div>
+          <h4>Fluxo de Caixa Livre</h4>
+          <p>É o caixa que sobra após a empresa pagar todas as suas despesas operacionais e reinvestir no negócio (Capex). <strong>FCL positivo e crescente</strong> é o sinal mais confiável de saúde financeira — é com esse caixa que a empresa paga dívidas, distribui dividendos e financia o crescimento. Lucro contábil pode ser manipulado; o caixa não mente.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COMO FUNCIONA O RANKING -->
+    <div class="ef-card" style="margin-bottom:16px;">
+      <h3>🏆 Como funciona o Ranking do Setor?</h3>
+      <p>O ranking de cada setor ordena as empresas do maior para o menor Score Factor. O score é calculado da seguinte forma:</p>
+      <ul>
+        <li>Cada indicador (ROIC, ROE, ROA, EV/EBIT, P/L, DY, Dív/Ativo) é comparado com a média do setor.</li>
+        <li>Acima da média: <strong style="color:var(--green-700);">2 pontos</strong> — Abaixo da média: <strong style="color:var(--red);">0 pontos</strong> — Na média: <strong style="color:var(--amber);">1 ponto</strong></li>
+        <li>A pontuação máxima possível é <strong>26 pontos</strong> (13 indicadores × 2 pontos)</li>
+        <li>O resultado final ranqueia as empresas de forma objetiva dentro do seu subsetor e setor</li>
+      </ul>
+      <p style="margin-top:10px;">O ranking é complementado pelo upside calculado sobre o preço justo, que indica se a empresa está cara, justa ou barata no momento da análise — gerando o <strong>Quadro Decisório Final</strong>.</p>
+    </div>
+
+    <!-- SINAIS DE DECISÃO -->
+    <div class="ef-card" style="margin-bottom:16px;">
+      <h3>🎯 Os Sinais de Decisão</h3>
+      <p style="margin-bottom:12px;">O Quadro Decisório combina Score Factor + Upside para gerar um sinal de decisão para cada empresa. Os sinais são:</p>
+      <div class="ef-signals-grid">
+        <div class="ef-signal" style="background:#064E3B;color:#A7F3D0;">
+          <div class="es-name">✅ COMPRA FORTE</div>
+          <div class="es-crit">Upside ≥ 20%<br>Alta qualidade + grande desconto</div>
+        </div>
+        <div class="ef-signal" style="background:var(--green-100);color:var(--green-800);">
+          <div class="es-name">✅ COMPRA</div>
+          <div class="es-crit">Upside entre 5% e 20%<br>Boa qualidade + desconto moderado</div>
+        </div>
+        <div class="ef-signal" style="background:var(--blue-bg);color:var(--blue-dark);">
+          <div class="es-name">💛 PREÇO JUSTO</div>
+          <div class="es-crit">Upside entre −5% e +5%<br>Empresa bem precificada</div>
+        </div>
+        <div class="ef-signal" style="background:var(--amber-bg);color:var(--amber-dark);">
+          <div class="es-name">⚠️ ATENÇÃO</div>
+          <div class="es-crit">Upside entre −5% e −15%<br>Cotação acima do justo</div>
+        </div>
+        <div class="ef-signal" style="background:var(--red-bg);color:var(--red-dark);">
+          <div class="es-name">🔴 CARO / EVITAR</div>
+          <div class="es-crit">Upside < −15%<br>Cotação muito acima do justo</div>
+        </div>
+      </div>
+      <p style="margin-top:12px;font-size:12px;color:var(--slate);">Atenção: o sinal de decisão é uma <strong>referência analítica</strong>, não uma ordem de compra ou venda. O investidor deve considerar seu perfil de risco, horizonte de investimento e contexto macroeconômico antes de tomar qualquer decisão.</p>
+    </div>
+
+    <!-- CICLO TRIMESTRAL -->
+    <div style="margin-bottom:20px;">
+      <div class="ef-section-title">🔄 O Ciclo Trimestral da Análise</div>
+      <div class="ef-section-sub">A análise Factor Invest não é uma decisão pontual — é um processo contínuo. Entender o ritmo da análise é fundamental para usá-la de forma eficaz.</div>
+      <div class="ef-card">
+        <div class="ef-timeline">
+          <div class="ef-step">
+            <div class="ef-step-num">1</div>
+            <div class="ef-step-body">
+              <h4>Resultado Trimestral é Divulgado</h4>
+              <p>As empresas listadas na B3 divulgam seus resultados trimestrais (balanço patrimonial, DRE e demonstração de fluxo de caixa) em datas específicas. Esses relatórios são a matéria-prima da análise — é a partir deles que os indicadores são calculados e atualizados.</p>
+            </div>
+          </div>
+          <div class="ef-step">
+            <div class="ef-step-num">2</div>
+            <div class="ef-step-body">
+              <h4>Indicadores são Atualizados</h4>
+              <p>Com os novos dados disponíveis, os indicadores de cada empresa são recalculados: ROIC, ROE, ROA, EV/EBIT, P/L, DY, endividamento, EBITDA e FCL. O Score Factor é então recalculado para todas as empresas do setor, atualizando o ranking.</p>
+            </div>
+          </div>
+          <div class="ef-step">
+            <div class="ef-step-num">3</div>
+            <div class="ef-step-body">
+              <h4>Snapshot é Salvo no Histórico</h4>
+              <p>Após a atualização, o investidor registra um snapshot da análise no Histórico Trimestral — incluindo os resultados de Lucro Líquido, EBITDA e Caixa comparados com o que o mercado esperava. Esse registro é o que vai permitir comparar a evolução da empresa nos próximos trimestres.</p>
+            </div>
+          </div>
+          <div class="ef-step">
+            <div class="ef-step-num">4</div>
+            <div class="ef-step-body">
+              <h4>Cotação É Acompanhada em Tempo Real</h4>
+              <p>O Upside e o Sinal de Decisão se atualizam automaticamente conforme a cotação muda — todos os dias durante o horário de pregão (10h–17h55 BRT). Isso permite identificar se o desconto persiste, se aumentou ou se a cotação já subiu e a oportunidade passou.</p>
+            </div>
+          </div>
+          <div class="ef-step">
+            <div class="ef-step-num">5</div>
+            <div class="ef-step-body">
+              <h4>Evolução é Comparada com Trimestres Anteriores</h4>
+              <p>Com o histórico acumulado, o investidor consegue distinguir entre dois cenários: (a) o desconto era pontual e a empresa não melhorou seus fundamentos — oportunidade que passou; ou (b) a empresa está consistentemente melhorando ROIC, EBITDA e geração de caixa — tese de investimento sólida e crescente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMO INTERPRETAR OS COMPARATIVOS DE RESULTADO -->
+    <div class="ef-card" style="margin-bottom:20px;">
+      <h3>📊 Como interpretar os Resultados vs. Expectativa do Mercado?</h3>
+      <p>Ao registrar um snapshot no Histórico Trimestral, você pode comparar o resultado da empresa com o que o <strong>consenso de mercado esperava</strong> (estimativas de analistas disponíveis em plataformas como Investing.com, Bloomberg, Refinitiv). Esta comparação é fundamental para avaliar o <strong>momentum</strong> da empresa:</p>
+      <ul>
+        <li><strong style="color:var(--green-700);">▲ Acima do Esperado:</strong> A empresa surpreendeu positivamente — o mercado tende a revisar o preço justo para cima e a cotação pode se valorizar nos dias seguintes.</li>
+        <li><strong style="color:var(--blue-dark);">● Em Linha:</strong> O resultado confirmou as expectativas — neutro para a cotação, mas sinaliza previsibilidade e consistência da gestão.</li>
+        <li><strong style="color:var(--red);">▼ Abaixo do Esperado:</strong> A empresa decepcionou — risco de revisão do preço justo para baixo e pressão na cotação. Importante analisar se foi pontual ou início de tendência.</li>
+      </ul>
+      <p style="margin-top:10px;">Acompanhar esses sinais ao longo de vários trimestres é o que permite identificar se uma empresa está em um <strong>ciclo de melhora estrutural</strong> ou se o desconto na cotação reflete fundamentos deteriorando.</p>
+    </div>
+
+    <!-- AVISO FINAL -->
+    <div class="ef-aviso">
+      📌 <strong>Lembre-se:</strong> A análise Factor Invest é uma ferramenta de apoio à decisão — não uma certeza de retorno. O mercado financeiro é dinâmico e imprevisível. Mesmo empresas com excelente score fundamental podem ter suas cotações pressionadas por fatores macroeconômicos, setoriais ou específicos da empresa que não estavam nos dados do último trimestre. Use esta análise como ponto de partida, não como único critério de decisão.
+    </div>
+
+  </div><!-- /ef-body -->
+</div><!-- /panel-easyfactor -->
 
 <!-- ══════════════════════════════════════════════════
      SECTOR DATA SCRIPTS
@@ -4959,11 +5543,177 @@ const SAU_SUBSETORES = SUBSETORES_SAU;
 
 <script>
 // ─── INIT & RENDER ALL ───────────────────────────────────
+
+// ─── TRANSPORTE & LOGÍSTICA DATA ─────────────────────────
+
+// ══════════════════════════════════════════════════════════════
+//  DADOS — TRANSPORTE & LOGÍSTICA B3
+//  Fonte: Logística Market View 2026-03-26 (Investing.com)
+//        SIMH3 Pro Research Report Mar 24, 2026
+// ══════════════════════════════════════════════════════════════
+const COMPANIES_TRP = [
+  { rank:1, ticker:'TGMA3', nome:'Tegma Gestão Logística', subsetor:'Logística Rodoviária', icon:'🚛',
+    pjBase:40.5439, precoBase:29.54, classifBase:'Barato',
+    roic:'21.4%', roa:'18.2%', roe:'27.1%', pl:'8.1x', evEbit:'6.6x', dy:'13.3%',
+    divAtivo:'9.3%', ret1a:'+12.5%', pfco:'8.1x', pbook:'2.26x',
+    crescDiv:'+14.1%', receita:'—', ebitda:'—', divida:'—',
+    scoreNum:23, score:'23/26', veredicto:'✅ COMPRA FORTE', classe:'A',
+    momento:'OPORTUNIDADE DE COMPRA', estrategia:'Compra · Stop R$24,00 · Alvo R$40,54 (PJ) · DY 13.3% remunera a espera',
+    hm:[2,2,2,2,2,2,2,1,2,1,2,2,1],
+    pessNum:32.44, otimNum:48.65,
+    pess:'R$32,44', real:'R$40,54', otim:'R$48,65', retPess:'+9.8%', retReal:'+37.2%', retOtim:'+64.7%',
+    alvoAnal:'R$38,00',
+    tip:'Líder em logística de veículos; ROIC 21.4% e ROA 18.2% excepcionais. DY 13.3%. Dívida/Ativo apenas 9.3%.',
+    pontos_pos:'• ROIC 21.4% e ROA 18.2% — retornos excepcionais, entre os mais altos do setor de transporte\n• DY 13.3% com 5 anos de dividendos crescentes — uma das maiores yields do setor\n• P/L 8.1x e EV/EBIT 6.6x — valuation muito atrativo para empresa de alta qualidade\n• Dívida/Ativo 9.3% — balanço solidíssimo, quase livre de dívidas\n• Modelo de negócios defensivo: logística de veículos zero-km com contratos de longo prazo\n• Upside de 37.2% ao PJ R$40.54 — classificação "Barato" confirmada',
+    pontos_neg:'• Receita concentrada no setor automotivo — vulnerável a ciclos de produção de veículos\n• P/Book 2.26x — ligeiramente acima de 1.5x, prêmio justificado pela qualidade\n• Crescimento da dívida 14.1% — monitorar, ainda que em patamar muito baixo\n• Empresa de menor liquidez comparada a RAIL3 ou ECOR3\n• Risco de disrupção: crescimento de EVs pode alterar dinâmica de logística automotiva',
+    fco:'FCO sólida consistente com ROA 18.2% e margens elevadas. P/FCO 8.1x — excelente. Dívida total mínima — empresa praticamente sem alavancagem financeira. Dívida/Ativo 9.3% vs média setorial 50%+ — vantagem competitiva de balanço. Modelo asset-light em logística de veículos gera alto ROIC com baixo capex.',
+    dcf:'P/L 8.1x e EV/EBIT 6.6x — entre os múltiplos mais baratos do setor para empresa lucrativa. DCF com WACC 10% e crescimento 8% aponta PJ R$38-43. PJ Investing R$40.54 vs preço R$29.54 (+37.2%). ROE 27.1% vs WACC implícito ~9% = EVA positivo expressivo. Candidata a valuação re-rating com maior visibilidade.',
+    estrategiaDetalhe:'Compra · Stop R$24,00 · Alvo 12m: R$38,00 (analistas) · Alvo PJ: R$40,54 · Posição 3-5% · DY 13.3% remunera enquanto aguarda valorização' },
+
+  { rank:2, ticker:'STBP3', nome:'Santos Brasil Participações', subsetor:'Portos & Terminais', icon:'🚢',
+    pjBase:17.50, precoBase:14.42, classifBase:'Barato',
+    roic:'25.0%', roa:'18.5%', roe:'32.0%', pl:'12.0x', evEbit:'7.2x', dy:'8.5%',
+    divAtivo:'22.0%', ret1a:'+42.0%', pfco:'8.5x', pbook:'3.8x',
+    crescDiv:'+55.0%', receita:'—', ebitda:'—', divida:'—',
+    scoreNum:20, score:'20/26', veredicto:'✅ COMPRA FORTE', classe:'A',
+    momento:'OPORTUNIDADE DE COMPRA', estrategia:'Compra · Stop R$12,00 · Alvo R$17,50 (PJ) · Terminal portuário líder com DY 8.5%',
+    hm:[2,2,2,1,2,2,2,0,2,0,1,2,2],
+    pessNum:14.00, otimNum:21.00,
+    pess:'R$14,00', real:'R$17,50', otim:'R$21,00', retPess:'-2.9%', retReal:'+21.4%', retOtim:'+45.6%',
+    alvoAnal:'R$17,00',
+    tip:'Maior operador de terminal de contêineres do Brasil; ROIC 25%. DY 8.5% com crescimento. Baixa alavancagem.',
+    pontos_pos:'• ROIC 25% e ROA 18.5% — empresa de qualidade excepcional; criação de valor sustentada\n• DY 8.5% com crescimento acelerado de dividendos — 55% de crescimento recente\n• EV/EBIT 7.2x — muito atrativo para operador portuário dominante no Santos (maior porto da América Latina)\n• Dívida/Ativo 22% — balanço muito saudável com espaço para alavancagem estratégica\n• Monopólio natural: licenças de concessão portuária em Santos com alta barreira de entrada\n• Upside de 21.4% ao PJ R$17.50; crescimento de volumes impulsionado por boom de exportações brasileiras',
+    pontos_neg:'• P/Book 3.8x — prêmio elevado, porém justificado pela qualidade do ativo\n• Crescimento da dívida 55% — risco de expansão acelerada de capex portuário\n• Exposição ao comércio externo — vulnerável a choques de demanda global\n• P/L 12x moderado para empresa de portfólio premium\n• Concentração geográfica: principal ativo em Santos (SP)',
+    fco:'FCO forte e crescente, sustentada por ROIC 25% e margens operacionais elevadas. P/FCO 8.5x — atrativo. Dívida/Ativo 22% — conforto financeiro para investimentos em capacidade. Receitas em dólar (tarifas de contêineres) protegem parcialmente contra desvalorização do real. Expansão de capacidade Tecon Santos em andamento.',
+    dcf:'P/L 12x e EV/EBIT 7.2x — valuation confortável para empresa monopolista de infra crítica. DCF com WACC 9% e crescimento 10% (expansão de capacidade) aponta PJ R$17-20. PJ estimado R$17.50 (+21.4%). Empresa com pricing power — passa reajustes anuais via indexação. Ativo de alta qualidade com geração de caixa previsível por décadas.',
+    estrategiaDetalhe:'Compra · Stop R$12,00 · Alvo 12m: R$17,00 (analistas) · Alvo PJ: R$17,50 · Posição 3-5% · Ativo de infra premium' },
+
+  { rank:3, ticker:'JSLG3', nome:'JSL SA', subsetor:'Logística Rodoviária', icon:'🚛',
+    pjBase:9.1089, precoBase:6.52, classifBase:'Barato',
+    roic:'9.5%', roa:'0.7%', roe:'5.1%', pl:'20.3x', evEbit:'7.3x', dy:'29.3%',
+    divAtivo:'81.0%', ret1a:'+15.0%', pfco:'1.9x', pbook:'1.04x',
+    crescDiv:'-2.5%', receita:'—', ebitda:'—', divida:'—',
+    scoreNum:17, score:'17/26', veredicto:'✅ COMPRA', classe:'B',
+    momento:'OPORTUNIDADE DE COMPRA', estrategia:'Compra · Stop R$5,20 · Alvo R$9,11 (PJ) · DY excepcional remunera espera · Monitorar alavancagem',
+    hm:[1,0,0,1,2,2,2,2,0,2,2,2,1],
+    pessNum:7.29, otimNum:10.93,
+    pess:'R$7,29', real:'R$9,11', otim:'R$10,93', retPess:'+11.8%', retReal:'+39.7%', retOtim:'+67.6%',
+    alvoAnal:'R$8,50',
+    tip:'DY 29.3% excepcional. EV/EBIT 7.3x barato. P/FCO 1.9x — geração de caixa forte. Upside 39.7%.',
+    pontos_pos:'• DY 29.3% — dividendo extraordinário; P/FCO 1.9x demonstra forte geração de caixa operacional\n• EV/EBIT 7.3x — muito atrativo; empresa operacionalmente eficiente\n• Upside de 39.7% ao PJ R$9.11 — desconto significativo ao valor intrínseco\n• P/Book 1.04x — negociando próximo ao patrimônio líquido\n• Cresc. Dívida -2.5% — desalavancagem em andamento, tendência positiva\n• Maior operadora de logística terceirizada do Brasil com frota diversificada',
+    pontos_neg:'• Dívida/Ativo 81% — alavancagem crítica; principal fator de risco\n• ROA 0.7% — muito baixo; dívida consome grande parte do retorno operacional\n• ROE 5.1% — fraco; reflete pressão dos juros sobre o patrimônio\n• P/L 20.3x — elevado para empresa com ROE baixo\n• Alta alavancagem com Selic em patamar elevado pressiona resultado financeiro',
+    fco:'P/FCO 1.9x — excelente; empresa gera caixa operacional robusto. O problema é que grande parte é consumida pelo serviço da dívida (Dívida/Ativo 81%). Modelo de negócio logístico tem alta previsibilidade de receita via contratos multi-anuais. Desalavancagem gradual em curso (-2.5% crescimento de dívida). FCF disponível para dividendos após serviço da dívida explica o DY extraordinário.',
+    dcf:'EV/EBIT 7.3x e P/FCO 1.9x são excepcionalmente baratos para empresa operacionalmente sólida. Desconto reflete risco de alavancagem. DCF com WACC 11% (risco de crédito) e crescimento 6% aponta PJ R$8.5-10. PJ Investing R$9.11 (+39.7%). Tese de investimento: desalavancagem gradual + crescimento orgânico = re-rating expressivo.',
+    estrategiaDetalhe:'Compra · Stop R$5,20 · Alvo 12m: R$8,50 (analistas) · Alvo PJ: R$9,11 · Posição 2-4% · Monitorar alavancagem trimestralmente' },
+
+  { rank:4, ticker:'LOGN3', nome:'Log-in Logística Intermodal', subsetor:'Portos & Terminais', icon:'🚢',
+    pjBase:40.631, precoBase:31.89, classifBase:'Barato',
+    roic:'11.6%', roa:'2.4%', roe:'9.1%', pl:'36.0x', evEbit:'9.5x', dy:'0.0%',
+    divAtivo:'37.7%', ret1a:'+10.0%', pfco:'7.2x', pbook:'3.1x',
+    crescDiv:'+3.9%', receita:'—', ebitda:'—', divida:'—',
+    scoreNum:16, score:'16/26', veredicto:'✅ COMPRA', classe:'B',
+    momento:'OPORTUNIDADE DE COMPRA', estrategia:'Compra · Stop R$26,00 · Alvo R$40,63 (PJ) · Cabotagem em expansão · Sem dividendos por ora',
+    hm:[2,0,1,0,1,0,2,1,2,2,2,2,1],
+    pessNum:32.50, otimNum:48.76,
+    pess:'R$32,50', real:'R$40,63', otim:'R$48,76', retPess:'+1.9%', retReal:'+27.4%', retOtim:'+52.9%',
+    alvoAnal:'R$40,00',
+    tip:'ROIC 11.6% em crescimento. Cabotagem brasileira em expansão estrutural. Balanço saudável (37.7% Dív/Ativo).',
+    pontos_pos:'• ROIC 11.6% — sólido e em crescimento; empresa cria valor acima do custo de capital\n• Dívida/Ativo 37.7% — balanço saudável, abaixo da média do setor\n• Upside de 27.4% ao PJ R$40.63 — classificação "Barato"\n• P/FCO 7.2x — razoável para empresa de navegação\n• Cabotagem brasileira em expansão estrutural — beneficiária de investimentos em infraestrutura\n• Modelo intermodal (cabotagem + ferrovia + rodoviário) garante vantagem competitiva',
+    pontos_neg:'• P/L 36x — elevado; lucros ainda em fase de maturação\n• ROA 2.4% — baixo; resultado do intenso uso de ativos em navegação\n• ROE 9.1% — moderado; potencial de melhora com escala\n• Sem dividendos — todos os recursos direcionados para crescimento\n• EV/EBIT 9.5x — acima da linha de compra forte mas ainda atrativo',
+    fco:'P/FCO 7.2x — razoável. FCO positiva e crescente. Dívida/Ativo 37.7% — nível confortável para empresa de capital intensivo. Crescimento da dívida controlado (3.9%). Empresa em fase de expansão da frota de embarcações — capex elevado mas com ROI positivo projetado. Sem dividendos: política de reinvestimento total no crescimento.',
+    dcf:'P/L 36x distorcido por fase de investimento. EV/EBIT 9.5x mais representativo — razoável. DCF com WACC 10% e crescimento 12% (expansão cabotagem) aponta PJ R$38-44. PJ Investing R$40.63 (+27.4%). Alvo analistas R$40. Tese: normalização de lucros com frota madura + crescimento de volumes.',
+    estrategiaDetalhe:'Compra · Stop R$26,00 · Alvo 12m: R$40,00 (analistas) · Alvo PJ: R$40,63 · Posição 2-4% · Crescimento de longo prazo' },
+
+  { rank:5, ticker:'ECOR3', nome:'Ecorodovias Infraestrutura', subsetor:'Infraestrutura & Rodovias', icon:'🏗️',
+    pjBase:9.0483, precoBase:8.16, classifBase:'Justo',
+    roic:'8.2%', roa:'2.6%', roe:'21.5%', pl:'6.5x', evEbit:'6.9x', dy:'3.8%',
+    divAtivo:'81.5%', ret1a:'+20.0%', pfco:'1.2x', pbook:'1.41x',
+    crescDiv:'+31.5%', receita:'—', ebitda:'—', divida:'—',
+    scoreNum:15, score:'15/26', veredicto:'✅ COMPRA', classe:'B',
+    momento:'OPORTUNIDADE DE COMPRA', estrategia:'Compra · Stop R$6,80 · Alvo R$9,05 (PJ) · Concessões rodoviárias com fluxo previsível · Monitorar alavancagem',
+    hm:[1,0,2,2,2,1,2,2,0,0,1,1,1],
+    pessNum:7.24, otimNum:10.86,
+    pess:'R$7,24', real:'R$9,05', otim:'R$10,86', retPess:'-11.3%', retReal:'+10.9%', retOtim:'+33.1%',
+    alvoAnal:'R$9,00',
+    tip:'Concessões rodoviárias estáveis. P/L 6.5x e EV/EBIT 6.9x muito baratos. Fluxo de caixa previsível via pedágios.',
+    pontos_pos:'• P/L 6.5x e EV/EBIT 6.9x — múltiplos muito atrativos para empresa de concessão com receita previsível\n• ROE 21.5% — geração de retorno sobre patrimônio sólida\n• P/FCO 1.2x — geração de caixa operacional excepcional vs market cap\n• P/Book 1.41x — negociando ligeiramente abaixo do valor de reposição dos ativos\n• Receita indexada à inflação via IPCA nos contratos de pedágio — proteção real\n• 4 anos consecutivos de crescimento de dividendos; DY 3.8%',
+    pontos_neg:'• Dívida/Ativo 81.5% — alta alavancagem; característica do setor de concessões mas preocupante\n• ROA 2.6% — baixo, reflexo do intenso uso de capital (ativo fixo elevado)\n• Crescimento da dívida 31.5% — acelerado; pressão de Selic elevada nos custos financeiros\n• Licitações de novas concessões: risco de não ganhar renewals ou perder margem em novas rodadas\n• Resultado líquido pressionado por despesas financeiras elevadas',
+    fco:'P/FCO 1.2x — excepcionalmente barato. FCO forte e previsível via fluxo de pedágios. Dívida/Ativo 81.5% é estrutural do setor (concessões lastreiam a dívida). Prazo médio de contratos de pedágio: 25-30 anos — fluxo de receita garantido. Amortização do ativo intangível (concessão) gera depreciação que reduz lucro contábil mas não afeta caixa. Resultado: lucro contábil subestima a geração de caixa real.',
+    dcf:'P/L 6.5x parece barato mas ROA 2.6% mostra que a dívida consome retorno. EV/EBIT 6.9x — múltiplo operacional muito atrativo. DCF com WACC 10.5% (risco regulatório) e crescimento 5% (renovação de concessões) aponta PJ R$8.50-10.00. PJ Investing R$9.05 (+10.9%). Empresa típica de infra: valuation pelo fluxo de dividendos e FCO descontado.',
+    estrategiaDetalhe:'Compra · Stop R$6,80 · Alvo 12m: R$9,00 (analistas) · Alvo PJ: R$9,05 · Posição 3-5% · Renda via pedágios indexados à inflação' },
+
+  { rank:6, ticker:'RAIL3', nome:'Rumo Logística Operadora', subsetor:'Ferroviário', icon:'🚂',
+    pjBase:20.9277, precoBase:16.11, classifBase:'Barato',
+    roic:'10.5%', roa:'1.7%', roe:'6.0%', pl:'36.4x', evEbit:'8.8x', dy:'4.9%',
+    divAtivo:'48.4%', ret1a:'+20.0%', pfco:'4.3x', pbook:'2.23x',
+    crescDiv:'+15.9%', receita:'—', ebitda:'—', divida:'—',
+    scoreNum:14, score:'14/26', veredicto:'✅ COMPRA', classe:'B',
+    momento:'OPORTUNIDADE DE COMPRA', estrategia:'Compra · Stop R$13,00 · Alvo R$20,93 (PJ) · Única operadora ferroviária pura do Brasil',
+    hm:[2,0,0,0,1,1,2,1,1,1,2,2,1],
+    pessNum:16.74, otimNum:25.11,
+    pess:'R$16,74', real:'R$20,93', otim:'R$25,11', retPess:'+3.9%', retReal:'+29.9%', retOtim:'+55.9%',
+    alvoAnal:'R$20,00',
+    tip:'Única operadora ferroviária pura. ROIC 10.5%. Expansão de capacidade em andamento. Upside 29.9%.',
+    pontos_pos:'• ROIC 10.5% — acima do custo de capital; empresa cria valor em setor de capital intensivo\n• Upside de 29.9% ao PJ R$20.93 — desconto expressivo\n• P/FCO 4.3x — geração de caixa operacional sólida\n• 4 anos de crescimento consecutivo de dividendos; DY 4.9%\n• Monopólio ferroviário: única operadora ferroviária pura do Brasil (grãos do Mato Grosso ao Porto de Santos)\n• Expansão da malha ferroviária + capacidade de vagões prevista para 2026-2028',
+    pontos_neg:'• P/L 36.4x — elevado; lucro pressionado por juros e depreciação de ativos ferroviários\n• ROA 1.7% e ROE 6.0% — baixos, reflexo da estrutura de capital pesada e intensidade de ativo\n• Dívida/Ativo 48.4% — alavancagem moderada, mas crescendo (+15.9%)\n• EV/EBIT 8.8x — na linha de fronteira; menos atrativo que pares como TGMA3 e ECOR3\n• Concentração no agronegócio: dependência do ciclo agrícola e produção de soja',
+    fco:'P/FCO 4.3x — bom para ferrovia. FCO positiva mas CapEx elevado para manutenção e expansão da malha. Dívida/Ativo 48.4% — razoável para setor ferroviário. Crescimento da dívida 15.9% para financiar expansão. Modelo de negócio: contratos de transporte de grãos de longo prazo protegem receita. Receita crescendo com expansão de volume de grãos escoados.',
+    dcf:'P/L 36x distorcido por depreciação e juros. EV/EBIT 8.8x — mais representativo e razoável. DCF com WACC 9.5% e crescimento 8% (expansão de capacidade) aponta PJ R$20-23. PJ Investing R$20.93 (+29.9%). Catalisador: conclusão da expansão de capacidade em 2026 + safra recorde de soja.',
+    estrategiaDetalhe:'Compra · Stop R$13,00 · Alvo 12m: R$20,00 (analistas) · Alvo PJ: R$20,93 · Posição 3-5% · Exposição ao agronegócio' },
+
+  { rank:7, ticker:'SIMH3', nome:'Simpar SA', subsetor:'Holding de Transporte', icon:'🏢',
+    pjBase:14.2546, precoBase:11.12, classifBase:'Barato',
+    roic:'8.1%', roa:'-0.7%', roe:'-8.3%', pl:'-7.7x', evEbit:'7.6x', dy:'1.2%',
+    divAtivo:'88.1%', ret1a:'+42.5%', pfco:'1.9x', pbook:'1.55x',
+    crescDiv:'+4.0%', receita:'R$43.3B', ebitda:'R$11.0B', divida:'R$58.4B',
+    scoreNum:14, score:'14/26', veredicto:'✅ COMPRA', classe:'B',
+    momento:'TURNAROUND EM ANDAMENTO', estrategia:'Compra · Stop R$9,00 · Alvo R$14,25 (PJ) · Recuperação de rentabilidade esperada FY26-27',
+    hm:[1,0,0,0,2,0,2,1,0,2,2,2,2],
+    pessNum:11.40, otimNum:17.11,
+    pess:'R$11,40', real:'R$14,25', otim:'R$17,11', retPess:'+2.5%', retReal:'+28.2%', retOtim:'+53.9%',
+    alvoAnal:'R$15,00',
+    tip:'Holding: JSL, Vamos, Movida, CS Brasil. Upside 28.2%. Turnaround com EPS projetado +2.46 BRL em FY27.',
+    pontos_pos:'• EV/EBIT 7.6x e P/FCO 1.9x — múltiplos operacionais muito atrativos para holding de logística\n• Upside de 28.2% ao PJ R$14.25 — classificação "Barato"\n• Receita de R$43.3B em crescimento (6% YoY em Q3 2025) — escala competitiva\n• EPS projetado: -1.1 BRL FY25 → 0.44 BRL FY26 → 2.46 BRL FY27 — turnaround expressivo\n• Maior fornecedor de supply-chain management e maior locadora de caminhões do Brasil\n• Management recomprando ações — confiança na recuperação de valor',
+    pontos_neg:'• Prejuízo líquido BRL 638.7M LTM — empresa não lucrativa no curto prazo\n• Dívida/Ativo 88.1% e Dívida Total R$58.4B — alavancagem crítica; sensível à Selic\n• ROA -0.7% e ROE -8.3% — destruição de valor temporária; aguardar virada\n• FCF negativo — fluxo de caixa livre ainda negativo por expansão de frota\n• Alta dependência de queda da Selic para destravar valor — risco de prazo',
+    fco:'Receita R$43.3B com EBITDA R$11.0B — geração operacional robusta (margem 25%). FCO positiva: R$2.5B LTM. Porém: Dívida Total R$58.4B e juros elevados consomem todo o lucro operacional. Net Debt/EBITDA 5.3x — acima do confortável mas em desalavancagem. P/FCO 1.9x — barato considerando FCO de R$2.5B.',
+    dcf:'P/L negativo — usar EV/EBIT 7.6x e EV/EBITDA 4.8x como métricas principais. Ambos muito baratos. DCF com WACC 10% e crescimento 5% + turnaround de lucratividade aponta PJ R$14-17. PJ Investing R$14.25 (+28.2%). Alvo analistas: média R$15.00 (alta 17.00, baixa 12.40). Catalisador: queda da Selic + desalavancagem das subsidiárias.',
+    estrategiaDetalhe:'Compra · Stop R$9,00 · Alvo 12m: R$15,00 (analistas) · Alvo PJ: R$14,25 · Posição 2-3% · Turnaround em progresso' },
+
+  { rank:8, ticker:'MOTV3', nome:'Motiva Infraestrutura', subsetor:'Infraestrutura & Rodovias', icon:'🏗️',
+    pjBase:13.6892, precoBase:15.73, classifBase:'Caro',
+    roic:'8.5%', roa:'5.4%', roe:'23.3%', pl:'10.9x', evEbit:'8.8x', dy:'2.5%',
+    divAtivo:'53.9%', ret1a:'+5.0%', pfco:'5.5x', pbook:'2.0x',
+    crescDiv:'+9.4%', receita:'—', ebitda:'—', divida:'—',
+    scoreNum:12, score:'12/26', veredicto:'⚠️ NEUTRO', classe:'C',
+    momento:'AGUARDAR CORREÇÃO', estrategia:'Neutro · Aguardar preço abaixo de R$13,50 · Monitorar evolução das concessões',
+    hm:[1,1,2,1,1,0,2,1,1,1,0,0,0],
+    pessNum:10.95, otimNum:16.43,
+    pess:'R$10,95', real:'R$13,69', otim:'R$16,43', retPess:'-30.4%', retReal:'-13.0%', retOtim:'+4.5%',
+    alvoAnal:'R$14,00',
+    tip:'Rodovias e infraestrutura. ROE 23.3% e ROA 5.4% razoáveis. Cotação acima do PJ — aguardar entrada.',
+    pontos_pos:'• ROE 23.3% — retorno sobre patrimônio elevado; empresa eficiente no uso de capital próprio\n• ROA 5.4% — razoável para empresa de infraestrutura\n• P/FCO 5.5x — geração de caixa boa vs market cap\n• P/L 10.9x — valuation moderado para o perfil de negócio\n• Dívida/Ativo 53.9% — alavancagem aceitável para setor de infraestrutura\n• Modelo de concessão com receita indexada à inflação',
+    pontos_neg:'• Cotação R$15.73 acima do PJ R$13.69 — downside de -13.0% vs preço justo\n• DY 2.5% — insuficiente para remunerar o risco corrente\n• Crescimento da dívida 9.4% — acima do ideal\n• Momentum 1 ano fraco — sem catalisadores imediatos\n• Empresa relativamente nova (IPO recente); histórico curto de resultados\n• Liquidez menor comparada a ECOR3',
+    fco:'P/FCO 5.5x — razoável. FCO positiva e crescente. Dívida/Ativo 53.9% — gerenciável. Crescimento da dívida 9.4% — monitorar tendência. Receitas de pedágio indexadas ao IPCA oferecem proteção inflacionária. Capex ainda elevado por ser empresa em fase de crescimento de concessões.',
+    dcf:'Cotação R$15.73 > PJ R$13.69 — empresa precificada acima do valor justo calculado. Downside de 13%. EV/EBIT 8.8x — razoável mas não atrativo ao preço atual. DCF com WACC 10.5% e crescimento 6% aponta PJ R$13-15. NEUTRO até correção de preço. Ponto de entrada interessante: R$12-13.',
+    estrategiaDetalhe:'Neutro · Aguardar queda para R$12-13 · Alvo 12m: R$14,00 (analistas) · Monitorar resultados trimestrais · Entrada em correções' },
+];
+
+const SUBSETORES_TRP = [
+  { nome: '🚛 Logística Rodoviária',    tickers: ['TGMA3','JSLG3'] },
+  { nome: '🚂 Ferroviário',             tickers: ['RAIL3'] },
+  { nome: '🚢 Portos & Terminal',       tickers: ['STBP3','LOGN3'] },
+  { nome: '🏗️ Infraestrutura & Rodovias', tickers: ['ECOR3','MOTV3'] },
+  { nome: '🏢 Holding de Transporte',   tickers: ['SIMH3'] },
+];
+
+const TRP_COMPANIES = COMPANIES_TRP;
+const TRP_SUBSETORES = SUBSETORES_TRP;
+
 renderAllFor('EN', EN_COMPANIES, EN_SUBSETORES, true);
 renderAllFor('PET', PET_COMPANIES, PET_SUBSETORES, true);
 renderAllFor('IMO', IMO_COMPANIES, IMO_SUBSETORES, false);
 renderAllFor('EQ', EQ_COMPANIES, EQ_SUBSETORES, false);
 renderAllFor('SAU', SAU_COMPANIES, SAU_SUBSETORES, true);
+renderAllFor('TRP', TRP_COMPANIES, TRP_SUBSETORES, false);
 updateHistTickerSelect();
 renderHistory();
 fetchAllSectorPrices().then(() => scheduleGlobalRefresh());
@@ -5176,7 +5926,7 @@ function jumpToSector(ticker) {
     'CPLE3':'energia','COCE3':'energia','AXIA3':'energia','ENGI3':'energia','EQTL3':'energia',
     'LIGT3':'energia','EMAE3':'energia','AURE3':'energia','RNEW3':'energia','RIOS3':'energia',
     'AFLT3':'energia','REDE3':'energia',
-    'PETR3':'petroleo','RECV3':'petroleo','UGPA3':'petroleo','VBBR3':'petroleo','BRAV3':'petroleo',
+    'PETR3':'petroleo','RECV3':'petroleo','UGPA3':'petroleo','VBBR3':'petroleo','TGMA3':'transporte','JSLG3':'transporte','RAIL3':'transporte','SIMH3':'transporte','LOGN3':'transporte','ECOR3':'transporte','MOTV3':'transporte','STBP3':'transporte','BRAV3':'petroleo',
     'OPCT3':'petroleo','PRIO3':'petroleo','CSNA3':'petroleo','RPMG3':'petroleo','LUPA3':'petroleo',
     'OSXB3':'petroleo','AZTE3':'petroleo',
     'TEND3':'imobiliario','CYRE3':'imobiliario','MRVE3':'imobiliario','JHSF3':'imobiliario',
@@ -5188,6 +5938,7 @@ function jumpToSector(ticker) {
     'MTSA3':'equipamentos','FRIO3':'equipamentos','BDLL3':'equipamentos','AERI3':'equipamentos',
     'INEP3':'equipamentos',
     'RADL3':'saude','GMAT3':'saude','PGMN3':'saude','RDOR3':'saude','FLRY3':'saude',
+    'SUZB3':'prodindustrial','KLBN3':'prodindustrial','DXCO3':'prodindustrial','RANI3':'prodindustrial',
     'HYPE3':'saude','HAPV3':'saude','QUAL3':'saude','DASA3':'saude','PFRM3':'saude',
     'VVEO3':'saude','MATD3':'saude','PNVL3':'saude','OFSA3':'saude','SRNA3':'saude',
     'TOTS3':'saude','POSI3':'saude','BLAU3':'saude',
@@ -5227,6 +5978,103 @@ setInterval(() => {
 }, 5000);
 </script>
 
+
+<script>
+// ─── PRODUÇÃO INDUSTRIAL DATA ─────────────────────────────
+// Fontes: Market View 2026-05-04 + Relatórios Investing.com Pro
+
+const PI_COMPANIES = [
+  {
+    rank:1, ticker:'RANI3', nome:'Celulose Irani SA',
+    subsetor:'Papel & Embalagem Sustentável', icon:'📦',
+    precoBase:9.43, pjBase:10.36, classifBase:'Barato',
+    roic:'7.8%', roa:'6.4%', roe:'17.2%',
+    pl:'8.1x', evEbit:'8.8x', dy:'6.17%', divAtivo:'52.1%',
+    pfco:'4.6x', pbook:'1.42x', ret1a:'+41.3%',
+    veredicto:'✅ COMPRA FORTE', score:'20/26', scoreNum:20,
+    momento:'🟢 COMPRA — ÚNICO ATIVO SUSTENTÁVEL PURO',
+    estrategia:'Compra gradual · Stop R$7.80 · Alvo R$10.60 (PJ) · Posição 3-5%',
+    estrategiaDetalhe:'Compra gradual em até 3 parcelas · Stop técnico R$7.80 (−17%) · Alvo 12m: R$10.60 · Posição 3-5% carteira · 8 anos consecutivos de dividendos',
+    alvoAnal:12.25, pessim:8.48, realista:10.36, otimista:12.43,
+    hm:[1,2,2,2,1,2,2,1,1,2,1,2,2],
+    pontos_pos:'• Único ativo puro de embalagem sustentável listado na B3 — posicionamento ESG premium\n• EBITDA adj. FY25 +11,8% YoY · margem 31,5% — expansão consistente\n• FCF yield 12,6% — geração de caixa excepcional\n• Net debt/EBITDA: 1,99x vs 2,26x em 2024 — desalavancagem acelerada\n• ROIC 13,3% vs custo pós-tax 8,9% — cria valor real para o acionista\n• 8 anos consecutivos de pagamento de dividendos — DY 6,17%\n• Alvo analista médio R$12,25 = +30% de upside potencial',
+    pontos_neg:'• Volumes de papelão ondulado -2,5% em Q4 2025 vs mercado -0,5% — perda de market share no curto prazo\n• Alavancagem ainda >2x EBITDA pressiona custo financeiro\n• Forward P/E sobe de 8,14x para 11,3x — analistas projetam queda no lucro FY26\n• Macro headwinds do Brasil: juros altos comprimem múltiplos industriais',
+    fco:'FCO FY25: R$504,1M (+27% YoY) | Investimentos: R$252,9M (Plataforma Gaia) | FCF líquido: ~R$251M | P/FCO 4,6x — excelente. Dívida líquida R$1,06B = 1,99x EBITDA. Dividendos 2025: R$169,8M (R$0,73/ação) = yield 10,8%.',
+    dcf:'PJ Investing.com: R$10,60 (upside +12,5%) | Alvo analistas: R$12,25 (upside +30%) | EV/EBITDA 6,15x FY25 → 5,26x FY26 | WACC ~10,5% | Cenário realista: R$10,36 | Otimista: R$12,43 | Pessimista: R$8,48',
+    fco_txt:'FCO FY25: R$504M | FCF yield: 12,6% | P/FCO: 4,6x | DY: 6,17%',
+    dcf_txt:'PJ R$10,60 | EV/EBITDA 6,15x | WACC ~10,5%'
+  },
+  {
+    rank:2, ticker:'SUZB3', nome:'Suzano Papel e Celulose SA',
+    subsetor:'Celulose Eucalipto (Exportação)', icon:'🌲',
+    precoBase:47.80, pjBase:59.95, classifBase:'Barato',
+    roic:'5.1%', roa:'7.1%', roe:'26.3%',
+    pl:'4.8x', evEbit:'13.3x', dy:'2.34%', divAtivo:'64.2%',
+    pfco:'3.3x', pbook:'1.35x', ret1a:'-5.79%',
+    veredicto:'✅ COMPRA', score:'18/26', scoreNum:18,
+    momento:'🟡 MONITORAR — HEADWINDS CURTO PRAZO',
+    estrategia:'Compra parcial · Stop R$38.00 · Alvo R$59.95 (PJ) · Posição 3-5%',
+    estrategiaDetalhe:'Compra parcial (50% posição) agora · Stop técnico R$38.00 (−21%) · Alvo 12m: R$57 (BofA) · Alvo 18m: R$59,95 (PJ) · Alvo bull: R$71 (Morgan Stanley)',
+    alvoAnal:68.68, pessim:47.96, realista:59.95, otimista:71.94,
+    hm:[1,2,2,2,1,1,2,1,1,2,2,2,0],
+    pontos_pos:'• Maior produtor mundial de celulose de eucalipto — 15-20% do mercado global hardwood\n• Projeto Cerrado concluído: capacidade 13,5M t/ano; custo cash <$100/t (~30% redução) — best-in-class global\n• Receita líquida FY25: R$50,1B (recorde) | Lucro líquido R$13,4B | Vendas +15% YoY\n• P/L apenas 4,41x com FCF yield 9,58% — múltiplos historicamente baixos\n• Fair value R$59,95 = upside +25,4% vs cotação atual\n• Alvo Morgan Stanley: R$71 | Jefferies: R$70 | BofA: R$57',
+    pontos_neg:'• BofA rebaixou para Hold em abr/26 (R$80→R$57) após 17 ratings de compra consecutivos\n• Analistas projetam EPS -43% em FY26 — preços de celulose devem cair 10-15%\n• Operação planejada 3,5% abaixo da capacidade nominal em 2026\n• Dívida total R$101,7B (Dív/Ativo 64%) — estrutura de capital alavancada\n• Exposição cambial: >80% das vendas em moeda estrangeira',
+    fco:'FCO FY25: R$18,15B | Investimentos: R$9,83B | Levered FCF ~R$5,7B | P/FCO ~3,3x. Dívida líquida ~R$96B mas EBITDA R$21B. Capex 2026 será menor que 2025 — FCF deve melhorar.',
+    dcf:'PJ Investing.com: R$59,95 (+25,4%) | EV/EBITDA 6,40x FY25 → 5,54x FY26 | WACC ~10% | Cenário realista: R$57-60 | Otimista: R$71 | Pessimista: R$48',
+    fco_txt:'FCO FY25: R$18,2B | FCF yield: 9,58% | P/FCO: 3,3x | DY: 2,34%',
+    dcf_txt:'PJ R$59,95 | EV/EBITDA 6,40x | WACC ~10%'
+  },
+  {
+    rank:3, ticker:'KLBN3', nome:'Klabin SA',
+    subsetor:'Papel & Embalagem Integrada', icon:'📄',
+    precoBase:3.95, pjBase:4.66, classifBase:'Barato',
+    roic:'3.8%', roa:'2.7%', roe:'14.6%',
+    pl:'17.2x', evEbit:'21.7x', dy:'8.51%', divAtivo:'57.9%',
+    pfco:'3.4x', pbook:'3.06x', ret1a:'+9.44%',
+    veredicto:'🟡 COMPRA/NEUTRO', score:'16/26', scoreNum:16,
+    momento:'🟡 MONITORAR — VALUATION JUSTO / DIVIDEND PLAY',
+    estrategia:'Posição renda · Stop R$3.20 · Alvo R$4.66 (PJ) · Foco dividend yield 8.5%',
+    estrategiaDetalhe:'Posição para renda · Stop técnico R$3.20 (−19%) · Alvo 12m: R$4,66 (PJ) · DY 8,51% + crescimento EPS +18% FY26e e +42% FY27e · 12 anos consecutivos de dividendos',
+    alvoAnal:4.66, pessim:3.73, realista:4.66, otimista:5.59,
+    hm:[1,1,1,0,0,2,2,0,1,2,1,2,1],
+    pontos_pos:'• Líder absoluto em embalagem kraft no Brasil: >60% market share kraftliner\n• 12 anos consecutivos de pagamento de dividendos — yield atual 8,51%\n• FCF yield 14,8% — geração de caixa forte\n• Analistas projetam EPS +18% FY26 e +42% FY27 — aceleração de lucros\n• 97% autossuficiência energética via biomassa renovável — custos protegidos',
+    pontos_neg:'• ROIC 3,8% abaixo do WACC — destrói valor no curto prazo\n• P/L 17,2x e EV/EBIT 21,7x — múltiplos altos para ROIC baixo\n• P/Book 3,06x — negociando a 3x o patrimônio\n• Dívida total R$38,5B | Dív/Ativo 57,9% — alavancagem significativa',
+    fco:'FCO FY25: R$6,40B | FCF estimado: ~R$4,5B | P/FCO 3,4x. FCF yield 14,8% é o maior do setor. Dividendos FY25: ~R$2,1B (yield 8,82%). Capex moderado pós-grande ciclo de investimentos.',
+    dcf:'PJ Investing.com: R$4,66 (+18,1%) | EV/EBITDA 8,03x FY25 → 6,76x FY27 | WACC ~10,5% | EPS FY27e: R$1,73 | Cenário realista: R$4,66 | Otimista: R$5,59 | Pessimista: R$3,73',
+    fco_txt:'FCO FY25: R$6,4B | FCF yield: 14,8% | P/FCO: 3,4x | DY: 8,51%',
+    dcf_txt:'PJ R$4,66 | EV/EBITDA 8,03x | WACC ~10,5%'
+  },
+  {
+    rank:4, ticker:'DXCO3', nome:'Dexco SA',
+    subsetor:'Madeira, Painéis e Materiais de Construção', icon:'🪵',
+    precoBase:5.35, pjBase:6.34, classifBase:'Barato',
+    roic:'2.5%', roa:'0.3%', roe:'0.88%',
+    pl:'42.5x', evEbit:'16.9x', dy:'0.13%', divAtivo:'63.7%',
+    pfco:'5.6x', pbook:'0.70x', ret1a:'+1.69%',
+    veredicto:'⚠️ NEUTRO', score:'10/26', scoreNum:10,
+    momento:'⚠️ AGUARDAR — TRANSFORMAÇÃO EM CURSO',
+    estrategia:'Aguardar deleveraging · Sem posição agora · Entrada somente com melhora de ROIC',
+    estrategiaDetalhe:'Não iniciar posição agora · Monitorar: (1) desalavancagem (meta <3x EBITDA), (2) dividendos JV LD Celulose (previsto 2026), (3) vendas de ativos · Entrada condicional: ROIC >6% + Dív/EBITDA <2,5x',
+    alvoAnal:6.99, pessim:5.07, realista:6.34, otimista:7.61,
+    hm:[0,0,0,0,0,0,2,2,1,2,1,2,1],
+    pontos_pos:'• P/Book 0,70x — negociando abaixo do valor patrimonial (possível valor oculto)\n• P/FCO 5,6x — empresa gera caixa acima do que o múltiplo de lucro indica\n• JV LD Celulose: excedendo capacidade projetada e deve iniciar dividendos em 2026\n• JPMorgan mantém "overweight" com alvo R$8,00 (upside +50% vs cotação)',
+    pontos_neg:'• ROIC apenas 2,5% — muito abaixo do WACC; destrói valor\n• ROA 0,3% e ROE 0,88% — retornos quase nulos\n• P/L 42,5x — múltiplos altos para empresa com rentabilidade baixa\n• Alavancagem ~3x EBITDA com custo de dívida 15% — severa restrição de caixa\n• Dívida/Ativo 63,7% — próximo ao limite crítico',
+    fco:'FCO LTM: R$952M | Investimentos: R$848M | FCF ~R$104M (marginal) | P/FCO 5,6x. Custo de juros ~15% sobre R$8B de dívida = ~R$1,2B/ano. JV LD Celulose deve gerar dividendos em 2026.',
+    dcf:'PJ Investing.com: R$6,34 (+18,5%) | PJ JPMorgan: R$8,00 (+50%) | EV/EBITDA 5,31x FY25 → 4,77x FY26 | WACC ~12% | Cenário realista: R$6,34 | Otimista: R$7,61 | Pessimista: R$5,07',
+    fco_txt:'FCO LTM: R$952M | FCF yield: 0,14% | P/FCO: 5,6x | DY: 0,13%',
+    dcf_txt:'PJ R$6,34 | EV/EBITDA 5,31x | WACC ~12%'
+  }
+];
+
+const PI_SUBSETORES = [
+  { nome:'📄 Papel & Embalagem Sustentável', tickers:['RANI3'] },
+  { nome:'🌲 Celulose & Papel Integrado (Exportação)', tickers:['SUZB3','KLBN3'] },
+  { nome:'🪵 Madeira, Painéis & Materiais de Construção', tickers:['DXCO3'] }
+];
+
+renderAllFor('PI', PI_COMPANIES, PI_SUBSETORES, true);
+updateTopUpsideFor('PI', PI_COMPANIES, 'PI_topUpside');
+</script>
+
 </body>
 </html>
-                 
